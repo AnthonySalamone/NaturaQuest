@@ -1,0 +1,56 @@
+.behavior-card {
+  background: var(--sapin);
+  color: var(--beige);
+
+  padding: 10px 20px 20px 20px;
+  border-radius: 20px;
+
+  .title-container {
+    font-family: 'PP Migra';
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+      font-size: 25px;
+    }
+    .arrow {
+      font-weight: bold;
+      font-size: 35px;
+      &:hover {
+        cursor: pointer;
+      }
+      &:active {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  ul {
+    list-style-type: square;
+    list-style-position: inside;
+    transition: 0.2s ease-in-out;
+
+    li {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: none;
+      }
+      span {
+        font-weight: 600;
+        font-size: 17px;
+      }
+    }
+  }
+  &.is-closed {
+    ul {
+      color: var(--sapin);
+      transition: 0.2s ease-in-out;
+      opacity: 0;
+      pointer-events: none;
+      transform-origin: top;
+      transform: scaleY(0);
+    }
+  }
+}

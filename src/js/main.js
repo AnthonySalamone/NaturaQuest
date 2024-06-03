@@ -56,6 +56,24 @@ showMoreButton.addEventListener('click', function() {
   isHidden = !isHidden; // Inverser l'état
 });
 
+//=============================================================================//
+//=============================behavior cards================================================//
+//=============================================================================//
 
+document.querySelectorAll('.behavior-card .arrow').forEach(arrow => {
+  arrow.addEventListener('click', function() {
+    const behaviorCard = arrow.closest('.behavior-card');
+    if (behaviorCard.classList.contains('is-open')) {
+      behaviorCard.classList.remove('is-open');
+      behaviorCard.classList.add('is-closed');
+      //after 0.3s delay add a class top close the background of the card
+    } else {
+      behaviorCard.classList.remove('is-closed');
+      behaviorCard.classList.add('is-open');
+      //after 0.3s delay remove it
+
+    }
+  });
+});
 
 
