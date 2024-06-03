@@ -3,6 +3,11 @@
 // ==================================== */
 
 :root {
+  --beige: #fff9e3;
+  --sapin: #074020;
+  --black: #000000;
+  --green: #2FAC66;
+  --hover: #07402027;
 }
 
 /* ====================================
@@ -24,12 +29,35 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 
+  font-family: 'PP Neue Montreal Book';
+
   font-size: 1rem;
-  line-height: 1.25;
+  line-height: 1.5;
+
+  background: var(--beige);
+}
+
+main {
+  max-width: 1600px;
+  margin: 0 25px;
+
+}
+
+@media (min-width:1200px) {
+  main {
+    margin: 0 50px;
+  }
+}
+
+@media (min-width:1600px) {
+  main {
+    margin: 0 auto;
+  }
 }
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 img,
@@ -39,6 +67,40 @@ video {
   vertical-align: middle;
 }
 
+ul,ol {
+  list-style-type: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: inherit;
+}
+
 /* ====================================
 // base rules
 // ==================================== */
+section {
+  margin-top: 50px;
+}
+.section-title {
+  font-family: 'PP Migra';
+  font-weight: bold;
+  color: var(--sapin);
+
+  font-size: 30px;
+  line-height: 1.2;
+
+  margin-bottom: 20px;
+}
+
+@media (min-width:768px) {
+  section {
+    margin-top: 150px;
+  }
+  .section-title {
+    font-size: 70px;
+    line-height: 1.2;
+  
+    margin-bottom: 20px;
+  }
+  
+}

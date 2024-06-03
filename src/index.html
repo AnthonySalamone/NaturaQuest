@@ -14,7 +14,7 @@
     <meta property="og:image" content="https://naturaquest.app/img/social-image.png" /> <!-- Image pour le partage sur les réseaux sociaux -->
     <meta property="og:url" content="https://naturaquest.app/" /> <!-- URL de votre site pour le partage sur les réseaux sociaux -->
     <meta property="og:type" content="website" /> <!-- Type de contenu pour le partage sur les réseaux sociaux -->
-    <link rel="icon" type="image/x-icon" href="./img/1x/favicon.png">
+    <!-- <link rel="icon" type="image/x-icon" href="./img/1x/favicon.png">  add favicon-->
     <link rel="canonical" href="https://naturaquest.app/index.html/" />
     <link rel="stylesheet" href="scss/main.scss" /> 
 </head>
@@ -22,7 +22,109 @@
     <header>
       NaturaQuest
     </header>
-    <main></main>
+    <main>
+      <section class="mission-section">
+        <h2 class="section-title">Partez à l'aventure</h2>
+        <div class="list-menu">
+          <ul>
+            <li data-filter="filter-randonnée"><a href="#">randonnée</a></li>
+            <li data-filter="filter-balade"><a href="#">balade</a></li>
+            <li data-filter="filter-faune"><a href="#">faune</a></li>
+            <li data-filter="filter-flore"><a href="#">flore</a></li>
+            <li data-filter="filter-insolite"><a href="#">insolite</a></li>
+          </ul>
+        </div>
+        <ul class="mission-cards-container">
+          <a class="mission-card filter-randonnée filter-faune filter-insolite" href="">
+            <li>
+              <div class="mission-card-img-container">
+                <div class="label-container">
+                  <div class="label">randonnée</div>
+                  <div class="label">faune</div>
+                  <div class="label">insolite</div>
+                </div>
+                <img src="img/Chenilles-processionnaires-du-pin.webp" alt="Photographie Chenilles processionnaires du pin">
+              </div>
+              <h3 class="mission-card-title">Signalement des Chenilles processionnaires du pin</h3>
+              <p class="mission-card-preview">Repérer les Chenilles processionnaires ou leurs nids dans des pinèdes, transmettre une photo géolocalisée.</p>
+              <p class="mission-card-information">Vallée du Valais, région lémanique • Printemps</p>
+            </li>
+          </a>
+          <a class="mission-card filter-balade filter-flore" href="">
+            <li>
+              <div class="mission-card-img-container">
+                <div class="label-container">
+                  <div class="label">balade</div>
+                  <div class="label">flore</div>
+                </div>
+                <img src="img/renoue-du-japon.webp" alt="Photographie Renouée du Japon">
+              </div>
+              <h3 class="mission-card-title">Néophyte envahissante: Renouée du Japon</h3>
+              <p class="mission-card-preview">Signaler et participer à l’arrachage de cette néophyte envahissante très résistante.</p>
+              <p class="mission-card-information">Versoix, Genève • Toute l'année</p>
+            </li>
+          </a>          <a class="mission-card filter-randonnée filter-faune" href="">
+            <li>
+              <div class="mission-card-img-container">
+                <div class="label-container">
+                  <div class="label">balade</div>
+                  <div class="label">faune</div>
+                </div>
+                <img src="img/herisson-commun.webp" alt="Photographie herisson commun">
+              </div>
+              <h3 class="mission-card-title">Recensement du hérisson commun</h3>
+              <p class="mission-card-preview">Identifier et dénombrer, lors de promenades nocturnes, les populations de hérissons communs</p>
+              <p class="mission-card-information">Suisse Romande • nuit du 10.07 au 10.08 2024</p>
+            </li>
+          </a>          <a class="mission-card filter-randonnée filter-faune" href="">
+            <li class="is-hidden hidden-missions">
+              <div class="mission-card-img-container">
+                <div class="label-container">
+                  <div class="label">randonnée</div>
+                  <div class="label">faune</div>
+                </div>
+                <img src="img/Chenilles-processionnaires-du-pin.webp" alt="Photographie Chenilles processionnaires du pin">
+              </div>
+              <h3 class="mission-card-title">Signalement des Chenilles processionnaires du pin</h3>
+              <p class="mission-card-preview">Repérer les Chenilles processionnaires ou leurs nids dans des pinèdes, transmettre une photo géolocalisée.</p>
+              <p class="mission-card-information">Vallée du Valais, région lémanique • Printemps</p>
+            </li>
+          </a>
+          <a class="mission-card filter-randonnée filter-faune" href="">
+            <li class="is-hidden hidden-missions">
+              <div class="mission-card-img-container">
+                <div class="label-container">
+                  <div class="label">randonnée</div>
+                  <div class="label">faune</div>
+                </div>
+                <img src="img/Chenilles-processionnaires-du-pin.webp" alt="Photographie Chenilles processionnaires du pin">
+              </div>
+              <h3 class="mission-card-title">Signalement des Chenilles processionnaires du pin</h3>
+              <p class="mission-card-preview">Repérer les Chenilles processionnaires ou leurs nids dans des pinèdes, transmettre une photo géolocalisée.</p>
+              <p class="mission-card-information">Vallée du Valais, région lémanique • Printemps</p>
+            </li>
+          </a>
+          <a class="mission-card filter-insolite" href="">
+            <li class="is-hidden hidden-missions">
+              <div class="mission-card-img-container">
+                <div class="label-container">
+                  <div class="label">insolite</div>
+                  <div class="label">faune</div>
+                </div>
+                <img src="img/Chenilles-processionnaires-du-pin.webp" alt="Photographie Chenilles processionnaires du pin">
+              </div>
+              <h3 class="mission-card-title">Signalement des Chenilles processionnaires du pin</h3>
+              <p class="mission-card-preview">Repérer les Chenilles processionnaires ou leurs nids dans des pinèdes, transmettre une photo géolocalisée.</p>
+              <p class="mission-card-information">Vallée du Valais, région lémanique • Printemps</p>
+            </li>
+          </a>
+        </ul>
+        <div class="show-more">
+          <div class="show-more-button">Afficher plus de missions</div>
+        </div>
+      </section>
+
+    </main>
     <footer></footer>
     <script src="js/main.js" type="module"></script>
   </body>

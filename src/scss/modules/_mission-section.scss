@@ -1,0 +1,249 @@
+.list-menu ul {
+  margin-bottom: 25px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+
+  font-family: 'PP Neue Montreal';
+  font-weight: 500;
+
+  li {
+    width: 32%;
+    height: 30px;
+    margin-right: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--sapin);
+    line-height: 1;
+
+    border: solid 2px var(--sapin);
+    border-radius: 15px;
+
+    transition: 0.3s ease-in-out;
+
+    &:first-child {
+      margin-bottom: 5px;
+    }
+    &.last-child {
+      margin-right: 0px;
+    }
+    &:hover {
+      background: var(--hover);
+      cursor: pointer;
+    }
+    &.is-active {
+      background: var(--sapin);
+      color: var(--beige);
+
+      transition: 0.3s ease-in-out;
+
+    }
+  }
+}
+
+.mission-cards-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.mission-card {
+
+  li{
+    transition: 0.7s ease-in-out;
+    transform: translateY(0%);
+    &.is-hidden {
+      opacity: 0;
+      pointer-events: none;
+      height: 0;
+      transition: 0.2s ease-in-out;
+      transform: translateY(100%);
+    }
+  }
+  li > * {
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+  .mission-card-img-container {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 230px;
+    img {
+      position: absolute;
+
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 60.58%, rgba(0, 0, 0, 0.30) 99.83%);
+      z-index: 1; 
+    }
+    .label-container {
+      position: absolute;
+
+      z-index: 2;
+
+      margin: 8px 0 0 8px ;
+      display: flex;
+      flex-direction: row;
+
+      font-family: 'PP Neue Montreal';
+      font-weight: 500;
+      font-size: 12px;
+
+      .label {
+        padding: 2px 10px;
+        margin-right: 5px;
+        border-radius: 15px;
+
+        color: var(--beige);
+        background: var(--green);
+
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+  h3.mission-card-title {
+    font-family: 'PP Neue Montreal';
+    line-height: 1.2;
+    font-weight: 500;
+  }
+  p.mission-card-information {
+    font-family: 'PP Neue Montreal';
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 12px;
+  }
+}
+.show-more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .show-more-button {
+    color: var(--sapin);
+    font-family: 'PP Migra';
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+
+    padding: 9px 10px 5px 10px;
+
+    border: solid 2px var(--sapin);
+    border-radius: 20px;
+
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      background: var(--hover);
+      cursor: pointer;
+    }
+    &.is-active {
+      background: var(--sapin);
+      color: var(--beige);
+
+      transition: 0.3s ease-in-out;
+
+    }
+  }
+}
+@media (min-width: 768px) {
+  .list-menu ul {
+    margin-bottom: 30px;
+
+    justify-content: flex-start;
+  
+    li {
+      width: 130px;
+      margin-right: 15px;
+      &:first-child {
+        margin-bottom: 0px;
+      }
+      &.last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+  .mission-cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .mission-card {
+    width: calc(50% - 12.5px);
+    font-size: 20px;
+
+    li > * {
+      &:last-child {
+        margin-bottom: 40px;
+      }
+    }
+    p.mission-card-information {
+      font-size: 14px;
+    }
+    .mission-card-img-container {
+      .label-container {  
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .mission-card {
+    width: calc(33.33% - calc(50px / 3));
+    font-size: 20px;
+    li > * {
+      &:last-child {
+        margin-bottom: 50px;
+      }
+    }
+    p.mission-card-information {
+      font-size: 16px;
+    }
+    .mission-card-img-container {
+      height: 330px;
+      .label-container {  
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1700px) {
+  .mission-card {
+    font-size: 25px;
+
+    li > * {
+      &:last-child {
+        margin-bottom: 80px;
+      }
+    }
+
+    p.mission-card-information {
+      font-size: 20px;
+    }
+    .mission-card-img-container {
+      .label-container {  
+        font-size: 20px;
+      }
+    }
+  }
+}

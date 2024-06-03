@@ -2,3 +2,58 @@
 @import "layout";
 @import "modules/header";
 @import "modules/footer";
+@import "modules/mission-section";
+
+@font-face {
+  font-family: 'PP Migra';
+  src: url('../fonts/PPMigra-Extrabold.woff2') format('woff2'),
+      url('../fonts/PPMigra-Extrabold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Migra';
+  src: url('../fonts/PPMigra-Regular.woff2') format('woff2'),
+      url('../fonts/PPMigra-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal Book';
+  src: url('../fonts/PPNeueMontreal-Book.woff2') format('woff2'),
+      url('../fonts/PPNeueMontreal-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('../fonts/PPNeueMontreal-Thin.woff2') format('woff2'),
+      url('../fonts/PPNeueMontreal-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('../fonts/PPNeueMontreal-Medium.woff2') format('woff2'),
+      url('../fonts/PPNeueMontreal-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('../fonts/PPNeueMontreal-Bold.woff2') format('woff2'),
+      url('../fonts/PPNeueMontreal-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
