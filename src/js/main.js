@@ -1,3 +1,10 @@
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
   // Filter functionality
   var filterItems = document.querySelectorAll('.list-menu li');
@@ -113,6 +120,28 @@ document.addEventListener('DOMContentLoaded', function() {
     burgerCloseButton.addEventListener('click', function() {
       burgerOverlay.classList.remove('is-active');
       console.log('is-not-active');
+    });
+  }
+});
+
+
+//pin article numbers
+document.addEventListener('DOMContentLoaded', function() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const pinnedNumbers = document.getElementById('articleNumbersContainer');
+
+  if (pinnedNumbers) {
+    // Créez l'animation avec ScrollTrigger
+    gsap.to(pinnedNumbers, {
+      y: 500, // Déplace l'élément de 200 pixels vers le bas
+      scrollTrigger: {
+        trigger: pinnedNumbers, // Déclencheur de l'animation
+        start: "top 50%", // Déclenche l'animation quand le haut de l'élément atteint 80% de la fenêtre
+        end: "bottom 20%", // Termine l'animation quand le bas de l'élément atteint 20% de la fenêtre
+        scrub: true, // Permet une animation fluide en fonction du défilement
+        markers: true, // Ajoute des marqueurs pour déboguer (supprimez cette ligne en production)
+      }
     });
   }
 });

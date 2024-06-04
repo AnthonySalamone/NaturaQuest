@@ -3,7 +3,7 @@
 // ==================================== */
 
 :root {
-  --beige: #fff9e3;
+  --beige: #fefbf3;
   --sapin: #074020;
   --black: #000000;
   --green: #2FAC66;
@@ -72,7 +72,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 //section
-section {
+section, article .section-title {
   margin-top: 50px;
 }
 .section-title {
@@ -87,7 +87,7 @@ section {
 }
 
 @media (min-width:768px) {
-   section {
+   section, article .section-title {
     margin-top: 150px;
     &:first-child {
       margin-top: 75px;
@@ -135,4 +135,33 @@ section {
 
     }
   }
+}
+
+
+
+.filtered {
+  background: #2FAC66;
+  transition: 0.1s ease-in-out;
+
+  &:hover {
+    background: #2fac6500;
+    transition: 0.1s ease-in-out;
+  }
+}
+
+.filtered img {
+ mix-blend-mode: screen;
+ -webkit-filter: grayscale(100%) contrast(200%);
+ filter: grayscale(100%) contrast(200%);
+ opacity: 1;
+ transition: 0.1s ease-in-out;
+
+ &:hover {
+  mix-blend-mode: none;
+  -webkit-filter:none;
+  filter: none;
+  transition: 0.1s ease-in-out;
+
+ }
+
 }

@@ -1,0 +1,74 @@
+.article-head {
+  p.article-introduction {
+    font-family: 'PP Neue Montreal';
+    font-weight: 500;
+  }
+  .article-information-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 25px 0;
+
+  }
+}
+
+.article-body {
+  figure {
+    margin-bottom: 25px;
+    figcaption {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  }
+  p {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .article-layout-container {
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  article h2.section-title {
+    width: 80%;
+  }
+
+  .article-head {
+    width: 50%;
+  .article-information-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    margin: 45px 0;
+
+    p { 
+      margin-right: 35px;
+      &:last-child{
+        margin-right: 0px;
+      }
+    }
+
+  }
+}
+
+.article-body {
+  width: 80%;
+  margin-right: 20px;
+  figure {
+    margin-bottom: 45px;
+    figcaption {
+      margin-top: 7px;
+      font-size: 18px;
+    }
+  }
+  p {
+    margin-bottom: 45px;
+  }
+}
+}

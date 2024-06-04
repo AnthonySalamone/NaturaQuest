@@ -29,6 +29,7 @@
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         transition: 0.2s ease-in-out;
+        pointer-events: none;
       }
       img {
         clip-path: ellipse(50% 50% at 50% 50%);
@@ -46,6 +47,9 @@
       height: 0;
       transition: 0.2s ease-in-out;
       transform: translateY(100%);
+      & > * {
+        display: none;
+      }
     }
   }
   li > * {
@@ -79,6 +83,7 @@
       box-sizing: border-box;
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
+      pointer-events: none;
     }
   }
   h3.top-stories-card-title {
