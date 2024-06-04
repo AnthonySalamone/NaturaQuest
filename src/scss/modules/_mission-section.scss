@@ -132,38 +132,7 @@
     font-size: 12px;
   }
 }
-.show-more {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .show-more-button {
-    color: var(--sapin);
-    font-family: 'PP Migra';
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1;
 
-    padding: 9px 10px 5px 10px;
-
-    border: solid 2px var(--sapin);
-    border-radius: 20px;
-
-    transition: 0.3s ease-in-out;
-
-    &:hover {
-      background: var(--hover);
-      cursor: pointer;
-    }
-    &.is-active {
-      background: var(--sapin);
-      color: var(--beige);
-
-      transition: 0.3s ease-in-out;
-
-    }
-  }
-}
 @media (min-width: 768px) {
   .list-menu ul {
     margin-bottom: 30px;

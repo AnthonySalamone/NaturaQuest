@@ -1,0 +1,175 @@
+header {
+  background: var(--sapin);
+  color: var(--beige);
+  font-family: 'PP Neue Montreal';
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 30px 0;
+
+  h1 {
+    font-family: 'PP Migra';
+    font-weight: bold;
+  }
+
+  nav.desktop-nav{
+    display: none;
+    pointer-events: none;
+  }
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+
+    .burger-line {
+      height: 3px;
+      width: 40px;
+  
+      background: var(--beige);
+    }
+  }
+}
+
+.burger-overlay{
+  position: fixed;
+  inset: 0;
+
+  transform: translateX(100%);
+
+  z-index: 100;
+  pointer-events: none;
+
+  background: var(--sapin);
+
+  transition: 0.2s ease-in-out;
+
+  padding-top: 50px;
+
+  font-size: 20px;
+
+  &.is-active {
+    transform: translateX(0);
+    transition: 0.2s ease-in-out;
+    pointer-events: all;
+  }
+  .close-overlay-button {
+    margin-bottom: 100px;
+  }
+  nav.lang ul{
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 50px;
+    li {
+      margin-right: 10px;
+      &.current-lang {
+        font-weight: bold;
+      }
+      &.current-lang::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        
+        background-color: var(--beige);
+        
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+      }
+    }
+  }
+  li {
+    position: relative;
+    margin-bottom: 5px;
+  }
+  li.current-page{
+    font-weight: bold;
+    &::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      
+      background-color: var(--beige);
+      
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+  
+      transform: scaleX(1);
+      transition: 0.2s ease-in-out;
+      transform-origin: right;
+    }
+  }
+}
+
+@media (min-width:1200px) {
+  .header-content {
+    .nav-container {
+      display: flex;
+      flex-direction: row;
+    }
+    nav.desktop-nav{
+      display: block;
+      pointer-events: all;
+      ul{
+        display: flex;
+        flex-direction: row;
+        li {
+          position: relative;
+        }
+        li::after {
+          content: "";
+          width: 100%;
+          height: 2px;
+          
+          background-color: var(--beige);
+          
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+
+          transform: scaleX(0);
+          transition: 0.2s ease-in-out;
+          transform-origin: left;
+
+        }
+        li:hover::after,li.current-page::after, li.current-lang::after {
+          content: "";
+          width: 100%;
+          height: 2px;
+          
+          background-color: var(--beige);
+          
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+
+          transform: scaleX(1);
+          transition: 0.2s ease-in-out;
+          transform-origin: right;
+        }
+        & > * {
+          margin-right: 40px;
+        }
+      }
+      &.lang{
+        margin-left: 100px;
+        a {
+          margin-right: 10px;
+        }
+      } 
+
+    }
+    .burger-menu {
+      display: none;
+    }
+  }
+
+}

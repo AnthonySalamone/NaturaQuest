@@ -66,14 +66,27 @@ document.querySelectorAll('.behavior-card .arrow').forEach(arrow => {
     if (behaviorCard.classList.contains('is-open')) {
       behaviorCard.classList.remove('is-open');
       behaviorCard.classList.add('is-closed');
-      //after 0.3s delay add a class top close the background of the card
+      //after 0.3s delay add display:none to .is-closed ul
     } else {
       behaviorCard.classList.remove('is-closed');
       behaviorCard.classList.add('is-open');
-      //after 0.3s delay remove it
-
+      //after 0.3s delay add display:block to .is-open ul
     }
   });
 });
 
 
+//=============================================================================//
+//=============================burger menu================================================//
+//=============================================================================//
+const burgerMenu = document.querySelector('.burger-menu');
+const burgerOverlay = document.querySelector('.burger-overlay');
+const burgerCloseButton = document.querySelector('.close-overlay-button');
+
+burgerMenu.addEventListener('click', function() {
+  burgerOverlay.classList.add('is-active');
+});
+
+burgerCloseButton.addEventListener('click', function() {
+  burgerOverlay.classList.remove('is-active');
+});

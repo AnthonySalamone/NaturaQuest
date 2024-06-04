@@ -37,23 +37,6 @@ body {
   background: var(--beige);
 }
 
-main {
-  max-width: 1600px;
-  margin: 0 25px;
-
-}
-
-@media (min-width:1200px) {
-  main {
-    margin: 0 50px;
-  }
-}
-
-@media (min-width:1600px) {
-  main {
-    margin: 0 auto;
-  }
-}
 
 a {
   color: inherit;
@@ -78,6 +61,8 @@ h1,h2,h3,h4,h5,h6 {
 /* ====================================
 // base rules
 // ==================================== */
+
+//section
 section {
   margin-top: 50px;
 }
@@ -93,8 +78,11 @@ section {
 }
 
 @media (min-width:768px) {
-  section {
+   section {
     margin-top: 150px;
+    &:first-child {
+      margin-top: 75px;
+    }
   }
   .section-title {
     font-size: 70px;
@@ -103,4 +91,57 @@ section {
     margin-bottom: 20px;
   }
   
+}
+
+//main
+main, .header-content, .burger-overlay-content {
+  max-width: 1600px;
+  margin: 0 25px;
+}
+
+@media (min-width:1200px) {
+  main, .header-content, .burger-overlay-content {
+    margin: 0 50px;
+  }
+}
+
+@media (min-width:1600px) {
+  main, .header-content, .burger-overlay-content {
+    margin: 0 auto;
+  }
+}
+
+//show more button
+
+.show-more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .show-more-button {
+    color: var(--sapin);
+    font-family: 'PP Migra';
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+
+    padding: 9px 10px 5px 10px;
+
+    border: solid 2px var(--sapin);
+    border-radius: 20px;
+
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      background: var(--hover);
+      cursor: pointer;
+    }
+    &.is-active {
+      background: var(--sapin);
+      color: var(--beige);
+
+      transition: 0.3s ease-in-out;
+
+    }
+  }
 }

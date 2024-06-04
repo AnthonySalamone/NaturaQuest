@@ -19,10 +19,83 @@
     <link rel="stylesheet" href="scss/main.scss" /> 
 </head>
   <body>
+
+    <!--Header start-->
     <header>
-      NaturaQuest
+      <div class="header-content">
+        <h1>NaturaQuest</h1>
+        <div class="nav-container">
+          <nav class="desktop-nav">
+            <ul>
+              <a href="">
+                <li>Accueil</li>
+              </a>
+              <a href="">
+                <li class="current-page">Explorer</li>
+              </a>
+              <a href="">
+                <li>Bilan</li>
+              </a>
+              <a href="">
+                <li>À propos</li>
+              </a>
+              <a href="">
+                <li>Contact</li>
+              </a>
+            </ul>
+          </nav>
+          <nav class="desktop-nav lang">
+            <ul>
+              <a href="">
+                <li class="current-lang">FR</li>
+              </a>
+              <a href="">
+                <li>DE</li>
+              </a>
+              <a href="">
+                <li>IT</li>
+              </a>
+              <a href="">
+                <li>EN</li>
+              </a>
+            </ul>
+          </nav>
+        </div>
+        <div class="burger-menu">
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+        </div>
+      </div>
+      <div class="burger-overlay">
+        <div class="burger-overlay-content">
+          <div class="close-overlay-button">
+            X
+          </div>
+          <nav class="mobile-nav">
+            <ul>
+              <li>Accueil</li>
+              <li class="current-page">Explorer</li>
+              <li>Bilan</li>
+              <li>À propos</li>
+              <li>Contact</li>
+            </ul>
+          </nav>
+          <nav class="mobile-nav lang">
+            <ul>
+              <li class="current-lang">FR</li>
+              <li>DE</li>
+              <li>EN</li>
+              <li>IT</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
+    <!--Header end-->
+    <!--main start-->
     <main>
+      <!--mission section start-->
       <section class="mission-section">
         <h2 class="section-title">Partez à l'aventure</h2>
         <div class="list-menu">
@@ -123,6 +196,9 @@
           <div class="show-more-button">Afficher plus de missions</div>
         </div>
       </section>
+      <!--mission section end-->
+
+      <!--behavior section start-->
       <section class="behavior-section">
         <h2 class="section-title">Comportez vous convenablement</h2>
         <div class="behavior-card is-open">
@@ -148,7 +224,11 @@
           </ul>
         </div>
       </section>
+      <!--behavior section end-->
+
     </main>
+    <!--main end-->
+
     <footer></footer>
     <script src="js/main.js" type="module"></script>
   </body>
