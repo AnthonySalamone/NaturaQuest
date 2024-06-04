@@ -1,0 +1,106 @@
+.hero-section {
+  color: var(--sapin);
+  font-family: 'PP Migra';
+  line-height: 1.2;
+  .hero-mockup-container {
+    display: flex;
+    margin-bottom: 25px;
+    img {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+  .hero-content-container {
+    h2.hero-baseline {
+      font-weight: bold;
+      font-size: 50px;
+
+      margin-bottom: 25px;
+    }
+    p.hero-sub-baseline {
+      font-family: 'PP Neue Montreal';
+      font-weight: 500;
+      font-size: 25px;
+
+      margin-bottom: 25px;
+    }
+    h3 {
+     font-size: 35px;
+     margin-bottom: 10px; 
+    }
+  }
+
+
+  .call-to-action {
+    margin-top: 40px;
+    p {
+      font-family: 'PP Neue Montreal';
+      font-weight: 500;
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+    .store-button-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      img {
+        width: 48%;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .hero-section {
+    display: flex;
+    flex-direction: row;
+
+    .hero-mockup-container {
+      width: 50%;
+      img {
+        width: 60%;
+        margin: 0 auto;
+        max-height: 100%;
+      }
+    }
+    .hero-content-container {
+      width: 50%;
+      h2.hero-baseline {
+        font-size: 100px;
+        margin-top: 150px;
+        margin-bottom: 70px;
+      }
+      p.hero-sub-baseline {
+
+        font-size: 45px;
+  
+        margin-bottom: 60px;
+      }
+      h3 {
+        font-size: 55px;
+        margin-bottom: 10px; 
+       }
+    }
+    .call-to-action {
+      margin-top: 60px;
+      p {
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+      .store-button-container {
+
+        justify-content: flex-start;
+        img {
+          width: 30%;
+          margin-right: 3%;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  
+}
