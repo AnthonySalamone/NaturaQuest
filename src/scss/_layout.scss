@@ -1,0 +1,16 @@
+main, .header-content, .burger-overlay-content {
+  max-width: 1600px;
+  margin: 0 25px;
+}
+
+@media (min-width:1200px) {
+  main, .header-content, .burger-overlay-content {
+    margin: 0 50px;
+  }
+}
+
+@media (min-width:1600px) {
+  main, .header-content, .burger-overlay-content {
+    margin: 0 auto;
+  }
+}
