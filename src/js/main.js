@@ -101,9 +101,9 @@ document.querySelectorAll('.behavior-card .arrow').forEach(arrow => {
 //=============================================================================//
 //=============================burger menu================================================//
 //=============================================================================//
-const burgerMenu = document.querySelector('.burger-menu');
-const burgerOverlay = document.querySelector('.burger-overlay');
-const burgerCloseButton = document.querySelector('.close-overlay-button');
+const burgerMenu = document.querySelectorAll('.burger-menu');
+const burgerOverlay = document.querySelectorAll('.burger-overlay');
+const burgerCloseButton = document.querySelectorAll('.close-overlay-button');
 
 burgerMenu.addEventListener('click', function() {
   burgerOverlay.classList.add('is-active');

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>NaturaQuest</title>
+    <meta name="description" content="Découvrez NaturaQuest, l'application mobile qui vous permet de vous promener, d'observer la nature et de contribuer à sa préservation de manière ludique et bénévole. Explorez les milieux naturels de la Suisse, participez à des missions d'observation et sensibilisez-vous à l'environnement. Rejoignez notre communauté engagée pour protéger la biodiversité et les paysages suisses."/>
+    <meta name="keywords" content="NaturaQuest, application mobile, écologie, bénévolat, observation de la nature, promenade écologique, préservation de l'environnement, suisse, biodiversité, flore, faune, promenades, missions bénévoles, sensibilisation environnementale">
+    <meta name="author" content="Anthony Salamone" />
+    <meta name="robots" content="index, follow" /> <!-- Pour autoriser l'indexation et le suivi par les robots des moteurs de recherche -->
+    <meta name="googlebot" content="index, follow" /> <!-- Pour autoriser l'indexation et le suivi par le robot de Google -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="NaturaQuest" />
+    <meta property="og:description" content="Découvrez NaturaQuest, l'application mobile qui vous permet de vous promener, d'observer la nature et de contribuer à sa préservation de manière ludique et bénévole. Explorez les milieux naturels de la Suisse, participez à des missions d'observation et sensibilisez-vous à l'environnement. Rejoignez notre communauté engagée pour protéger la biodiversité et les paysages suisses."/> <!-- Description pour le partage sur les réseaux sociaux -->
+    <meta property="og:image" content="https://naturaquest.app/img/social-image.png" /> <!-- Image pour le partage sur les réseaux sociaux -->
+    <meta property="og:url" content="https://naturaquest.app/" /> <!-- URL de votre site pour le partage sur les réseaux sociaux -->
+    <meta property="og:type" content="website" /> <!-- Type de contenu pour le partage sur les réseaux sociaux -->
+    <!-- <link rel="icon" type="image/x-icon" href="./img/1x/favicon.png">  add favicon-->
+    <link rel="canonical" href="https://naturaquest.app/index.html/" />
+    <link rel="stylesheet" href="scss/main.scss" /> 
+</head>
+  <body>
+
+    <!--Header start-->
+    <header>
+      <div class="header-content">
+        <h1>NaturaQuest</h1>
+        <div class="nav-container">
+          <nav class="desktop-nav">
+            <ul>
+              <a href="index.html">
+                <li>Accueil</li>
+              </a>
+              <a href="explorer.html">
+                <li class="current-page">Explorer</li>
+              </a>
+              <a href="Bilan.html">
+                <li>Bilan</li>
+              </a>
+              <a href="about.html">
+                <li>À propos</li>
+              </a>
+              <a href="contact.html">
+                <li>Contact</li>
+              </a>
+            </ul>
+          </nav>
+          <nav class="desktop-nav lang">
+            <ul>
+              <a href="">
+                <li class="current-lang">FR</li>
+              </a>
+              <a href="">
+                <li>DE</li>
+              </a>
+              <a href="">
+                <li>IT</li>
+              </a>
+              <a href="">
+                <li>EN</li>
+              </a>
+            </ul>
+          </nav>
+        </div>
+        <div class="burger-menu">
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+        </div>
+      </div>
+      <div class="burger-overlay">
+        <div class="burger-overlay-content">
+          <div class="close-overlay-button">
+            X
+          </div>
+          <nav class="mobile-nav">
+            <ul>
+              <li>Accueil</li>
+              <li class="current-page">Explorer</li>
+              <li>Bilan</li>
+              <li>À propos</li>
+              <li>Contact</li>
+            </ul>
+          </nav>
+          <nav class="mobile-nav lang">
+            <ul>
+              <li class="current-lang">FR</li>
+              <li>DE</li>
+              <li>EN</li>
+              <li>IT</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--Header end-->
+    <!--main start-->
+    <main>
+      <!--mission section start-->
+      <section class="mission-section">
+        <h2 class="section-title">Partez à l'aventure</h2>
+        <div class="list-menu">
+          <ul>
+            <li data-filter="filter-randonnée"><a href="#">randonnée</a></li>
+            <li data-filter="filter-balade"><a href="#">balade</a></li>
+            <li data-filter="filter-faune"><a href="#">faune</a></li>
+            <li data-filter="filter-flore"><a href="#">flore</a></li>
+            <li data-filter="filter-insolite"><a href="#">insolite</a></li>
+          </ul>
+        </div>
+        <ul class="mission-cards-container">
+          <a class="mission-card filter-randonnée filter-faune filter-insolite" href="">
+            <li>
+              <div class="mission-card-img-container">
+                <div class="label-container">
+                  <div class="label">randonnée</div>
+                  <div class="label">faune</div>
+                  <div class="label">insolite</div>
+                </div>
+                <img src="img/Chenilles-processionnaires-du-pin.webp" alt="Photographie Chenilles processionnaires du pin">
+              </div>
+              <h3 class="mission-card-title">Signalement des Chenilles processionnaires du pin</h3>
+              <p class="mission-card-preview">Repérer les Chenilles processionnaires ou leurs nids dans des pinèdes, transmettre une photo géolocalisée.</p>
+              <p class="mission-card-information">Vallée du Valais, région lémanique • Printemps</p>
+            </li>
+          </a>
+          <a class="mission-card filter-balade filter-flore" href="">
+            <li>
+              <div class="mission-card-img-container">
+                <div class="label-container">
+                  <div class="label">balade</div>
+                  <div class="label">flore</div>
+                </div>
+                <img src="img/renoue-du-japon.webp" alt="Photographie Renouée du Japon">
+              </div>
+              <h3 class="mission-card-title">Néophyte envahissante: Renouée du Japon</h3>
+              <p class="mission-card-preview">Signaler et participer à l’arrachage de cette néophyte envahissante très résistante.</p>
+              <p class="mission-card-information">Versoix, Genève • Toute l'année</p>
+            </li>
+          </a>          <a class="mission-card filter-randonnée filter-faune" href="">
+            <li>
+              <div class="mission-card-img-container">
+                <div class="label-container">
+                  <div class="label">balade</div>
+                  <div class="label">faune</div>
+                </div>
+                <img src="img/herisson-commun.webp" alt="Photographie herisson commun">
+              </div>
+              <h3 class="mission-card-title">Recensement du hérisson commun</h3>
+              <p class="mission-card-preview">Identifier et dénombrer, lors de promenades nocturnes, les populations de hérissons communs</p>
+              <p class="mission-card-information">Suisse Romande • nuit du 10.07 au 10.08 2024</p>
+            </li>
+          </a>          <a class="mission-card filter-randonnée filter-faune" href="">
+            <li class="is-hidden hidden-missions">
+              <div class="mission-card-img-container">
+                <div class="label-container">
+                  <div class="label">randonnée</div>
+                  <div class="label">faune</div>
+                </div>
+                <img src="img/Chenilles-processionnaires-du-pin.webp" alt="Photographie Chenilles processionnaires du pin">
+              </div>
+              <h3 class="mission-card-title">Signalement des Chenilles processionnaires du pin</h3>
+              <p class="mission-card-preview">Repérer les Chenilles processionnaires ou leurs nids dans des pinèdes, transmettre une photo géolocalisée.</p>
+              <p class="mission-card-information">Vallée du Valais, région lémanique • Printemps</p>
+            </li>
+          </a>
+          <a class="mission-card filter-randonnée filter-faune" href="">
+            <li class="is-hidden hidden-missions">
+              <div class="mission-card-img-container">
+                <div class="label-container">
+                  <div class="label">randonnée</div>
+                  <div class="label">faune</div>
+                </div>
+                <img src="img/Chenilles-processionnaires-du-pin.webp" alt="Photographie Chenilles processionnaires du pin">
+              </div>
+              <h3 class="mission-card-title">Signalement des Chenilles processionnaires du pin</h3>
+              <p class="mission-card-preview">Repérer les Chenilles processionnaires ou leurs nids dans des pinèdes, transmettre une photo géolocalisée.</p>
+              <p class="mission-card-information">Vallée du Valais, région lémanique • Printemps</p>
+            </li>
+          </a>
+          <a class="mission-card filter-insolite" href="">
+            <li class="is-hidden hidden-missions">
+              <div class="mission-card-img-container">
+                <div class="label-container">
+                  <div class="label">insolite</div>
+                  <div class="label">faune</div>
+                </div>
+                <img src="img/Chenilles-processionnaires-du-pin.webp" alt="Photographie Chenilles processionnaires du pin">
+              </div>
+              <h3 class="mission-card-title">Signalement des Chenilles processionnaires du pin</h3>
+              <p class="mission-card-preview">Repérer les Chenilles processionnaires ou leurs nids dans des pinèdes, transmettre une photo géolocalisée.</p>
+              <p class="mission-card-information">Vallée du Valais, région lémanique • Printemps</p>
+            </li>
+          </a>
+        </ul>
+        <div class="show-more">
+          <div class="show-more-button missions-button">Afficher plus de missions</div>
+        </div>
+      </section>
+      <!--mission section end-->
+
+      <!--behavior section start-->
+      <section class="behavior-section">
+        <h2 class="section-title">Comportez vous convenablement</h2>
+        <div class="behavior-card is-open">
+          <div class="title-container">
+            <h3>Respectez la nature</h3>
+            <div class="arrow">↑</div>
+          </div>
+          <ul>
+            <li><span>Se déplacer de manière adaptée :</span>  Favorisez la marche ou le vélo. Proscrivez tout autre moyen de déplacement, sauf en cas d’accessibilité réduite.</li>
+            <li><span>Ne rien jeter :</span> Collectez et gardez avec vous vos déchets, y compris les déchets compostables.</li>
+            <li><span>Préserver le biotope :</span> Laissez les choses à leur place. Ne pas cueillir ni ne ramasser de végétaux ou de minéraux.</li>
+          </ul>
+        </div>
+        <div class="behavior-card is-closed">
+          <div class="title-container">
+            <h3>Respectez la nature</h3>
+            <div class="arrow">↑</div>
+          </div>
+          <ul>
+            <li><span>Se déplacer de manière adaptée :</span>  Favorisez la marche ou le vélo. Proscrivez tout autre moyen de déplacement, sauf en cas d’accessibilité réduite.</li>
+            <li><span>Ne rien jeter :</span> Collectez et gardez avec vous vos déchets, y compris les déchets compostables.</li>
+            <li><span>Préserver le biotope :</span> Laissez les choses à leur place. Ne pas cueillir ni ne ramasser de végétaux ou de minéraux.</li>
+          </ul>
+        </div>
+      </section>
+      <!--behavior section end-->
+    </main>
+    <!--main end-->
+
+    <footer></footer>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
