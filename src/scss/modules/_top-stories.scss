@@ -1,0 +1,153 @@
+
+
+.top-stories-cards-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.top-stories-card {
+  img {
+    clip-path: ellipse(75% 75% at 50% 50%);
+    transition: 0.2s ease-in-out;
+  }
+  &:hover {
+    .top-stories-card-img-container {
+      transition: 0.2s ease-in-out;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: solid 2px var(--green);
+        z-index: 100;
+        border-radius: 80% 80% 80% 80%;
+  
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        transition: 0.2s ease-in-out;
+      }
+      img {
+        clip-path: ellipse(50% 50% at 50% 50%);
+        transition: 0.2s ease-in-out;
+      }
+    }
+  }
+
+  li{
+    transition: 0.7s ease-in-out;
+    transform: translateY(0%);
+    &.is-hidden {
+      opacity: 0;
+      pointer-events: none;
+      height: 0;
+      transition: 0.2s ease-in-out;
+      transform: translateY(100%);
+    }
+  }
+  li > * {
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+  .top-stories-card-img-container {
+    position: relative;
+    overflow: hidden;
+    height: 230px;
+    img {
+      position: absolute;
+
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: solid 2px var(--beige);
+      z-index: 100;
+      border-radius: 80% 80% 80% 80%;
+
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+  }
+  h3.top-stories-card-title {
+    font-family: 'PP Neue Montreal';
+    line-height: 1.2;
+    font-weight: 500;
+  }
+  p.top-stories-read-more {
+    font-family: 'PP Neue Montreal';
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .top-stories-cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .top-stories-card {
+    width: calc(50% - 12.5px);
+    font-size: 20px;
+
+    li > * {
+      &:last-child {
+        margin-bottom: 40px;
+      }
+    }
+    p.top-stories-read-more {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .top-stories-card {
+    width: calc(33.33% - calc(50px / 3));
+    font-size: 20px;
+    li > * {
+      &:last-child {
+        margin-bottom: 50px;
+      }
+    }
+    p.top-stories-read-more {
+      font-size: 16px;
+    }
+    .top-stories-card-img-container {
+      height: 330px;
+    }
+  }
+}
+
+@media (min-width: 1700px) {
+  .top-stories-card {
+    font-size: 25px;
+
+    li > * {
+      &:last-child {
+        margin-bottom: 80px;
+      }
+    }
+
+    p.top-stories-read-more {
+      font-size: 20px;
+    }
+  }
+}

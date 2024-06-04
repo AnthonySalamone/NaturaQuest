@@ -37,23 +37,45 @@ document.addEventListener('DOMContentLoaded', function() {
 //=============================================================================//
 //=============================show more missions================================================//
 //=============================================================================//
-const showMoreButton = document.querySelector('.show-more-button');
-let isHidden = true;
+const showMoreMissionsButton = document.querySelector('.show-more-button.missions-button');
+let missionsIsHidden = true;
 
-showMoreButton.addEventListener('click', function() {
+showMoreMissionsButton.addEventListener('click', function() {
   const hiddenCards = document.querySelectorAll('.mission-card .hidden-missions');
-  if (isHidden) {
+  if (missionsIsHidden) {
     hiddenCards.forEach(card => {
       card.classList.remove('is-hidden');
     });
-    showMoreButton.textContent = 'Masquer toutes les missions';
+    showMoreMissionsButton.textContent = 'Masquer toutes les missions';
   } else {
     hiddenCards.forEach(card => {
       card.classList.add('is-hidden');
     });
-    showMoreButton.textContent = 'Afficher plus de missions';
+    showMoreMissionsButton.textContent = 'Afficher plus de missions';
   }
-  isHidden = !isHidden; // Inverser l'état
+  missionsIsHidden = !missionsIsHidden; // Inverser l'état
+});
+
+//=============================================================================//
+//=============================show more top stories================================================//
+//=============================================================================//
+const showMoreTopStoriesButton = document.querySelector('.show-more-button.top-stories-button');
+let topStoriesIsHidden = true;
+
+showMoreTopStoriesButton.addEventListener('click', function() {
+  const hiddenCards = document.querySelectorAll('.top-stories-card .hidden-top-stories');
+  if (topStoriesIsHidden) {
+    hiddenCards.forEach(card => {
+      card.classList.remove('is-hidden');
+    });
+    showMoreTopStoriesButton.textContent = 'Masquer toutes les top stories';
+  } else {
+    hiddenCards.forEach(card => {
+      card.classList.add('is-hidden');
+    });
+    showMoreTopStoriesButton.textContent = 'Afficher plus de top stories';
+  }
+  topStoriesIsHidden = !topStoriesIsHidden; // Inverser l'état
 });
 
 //=============================================================================//
