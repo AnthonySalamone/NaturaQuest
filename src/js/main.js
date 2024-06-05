@@ -145,3 +145,71 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+
+
+// MOCKUP
+const heroMockup = document.getElementById('heroMockup');
+
+if (heroMockup && window.innerWidth > 1200) {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: heroMockup, // Déclencheur de l'animation
+      start: "top 10%", // Déclenche l'animation quand le haut de l'élément atteint 10% de la fenêtre
+      end: "bottom -120%", // Termine l'animation quand le bas de l'élément atteint -30% de la fenêtre
+      scrub: true,
+      pin: true, // Permet une animation fluide en fonction du défilement
+      markers: true, // Ajoute des marqueurs pour déboguer (supprimez cette ligne en production)
+    }
+  });
+}
+
+const heroContent = document.querySelector('.hero-content-container');
+
+if (heroContent) {
+  const children = heroContent.children;
+
+  gsap.utils.toArray(children).forEach(child => {
+    gsap.fromTo(child, 
+      { y: 150 }, 
+      {
+        y: 0,
+        scrollTrigger: {
+          trigger: child,
+          start: "top bottom",
+          end: "top center",
+          scrub: true,
+          markers: true // Ajoute des marqueurs pour le débogage
+        }
+      }
+    );
+  });
+}
+
+// // Récupérer le nom du fichier actuel dans l'URL
+// const currentUrl = window.location.pathname.split('/').pop();
+
+// // Vérifier si le nom du fichier est différent de "index.html"
+// if (currentUrl !== "index.html") {
+//   const sections = document.querySelectorAll('section');
+
+//   if (sections) {
+//     sections.forEach(section => {
+//       gsap.fromTo(section, 
+//         { y: 150 }, 
+//         {
+//           y: 0,
+//           scrollTrigger: {
+//             trigger: section,
+//             start: "top bottom",
+//             end: "top center",
+//             scrub: true,
+//             markers: true 
+//           }
+//         }
+//       );
+//     });
+//   }
+// }
+
+

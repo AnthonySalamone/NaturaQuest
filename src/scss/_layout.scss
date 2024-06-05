@@ -3,9 +3,19 @@ main, .header-content, .burger-overlay-content {
   margin: 0 25px;
 }
 
+section.wide {
+  margin: 0 -25px;
+  padding: 50px 25px;
+}
+
+
 @media (min-width:1200px) {
   main, .header-content, .burger-overlay-content {
     margin: 0 50px;
+  }
+  section.wide {
+    margin: 0 -50px;
+    padding: 70px 50px 110px 50px;
   }
 }
 

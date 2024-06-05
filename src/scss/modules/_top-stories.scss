@@ -11,31 +11,35 @@
     transition: 0.2s ease-in-out;
   }
   &:hover {
-    .top-stories-card-img-container {
-      transition: 0.2s ease-in-out;
+    
+    // .top-stories-card-img-container {
+    //   transition: 0.2s ease-in-out;
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: solid 2px var(--green);
-        z-index: 100;
-        border-radius: 80% 80% 80% 80%;
+    //   &::before {
+    //     content: "";
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     border: solid 2px var(--green);
+    //     z-index: 100;
+    //     border-radius: 80% 80% 80% 80%;
   
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        transition: 0.2s ease-in-out;
-        pointer-events: none;
-      }
-      img {
-        clip-path: ellipse(50% 50% at 50% 50%);
-        transition: 0.2s ease-in-out;
-      }
-    }
+    //     box-sizing: border-box;
+    //     -moz-box-sizing: border-box;
+    //     -webkit-box-sizing: border-box;
+    //     transition: 0.2s ease-in-out;
+    //     pointer-events: none;
+    //   }
+    //   img {
+    //     // clip-path: ellipse(50% 50% at 50% 50%);
+    //     // transition: 0.2s ease-in-out;
+    //     border: solid 2px var(--green);
+    //     z-index: 100;
+    //     border-radius: 80% 80% 80% 80%;
+    //   }
+    // }
   }
 
   li{

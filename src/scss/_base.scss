@@ -85,6 +85,9 @@ section, article .section-title {
 
   margin-bottom: 20px;
 }
+.wide .section-title {
+  color: var(--beige);
+}
 
 @media (min-width:768px) {
    section, article .section-title {
@@ -139,7 +142,7 @@ section, article .section-title {
 
 
 
-.filtered {
+li .filtered {
   background: #2FAC66;
   transition: 0.1s ease-in-out;
 
@@ -149,7 +152,7 @@ section, article .section-title {
   }
 }
 
-.filtered img {
+li .filtered img {
  mix-blend-mode: screen;
  -webkit-filter: grayscale(100%) contrast(200%);
  filter: grayscale(100%) contrast(200%);
