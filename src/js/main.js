@@ -72,39 +72,77 @@ document.addEventListener('DOMContentLoaded', function() {
         hiddenCards.forEach(card => {
           card.classList.remove('is-hidden');
         });
-        showMoreTopStoriesButton.textContent = 'Masquer toutes les top stories';
-      } else {
-        hiddenCards.forEach(card => {
-          card.classList.add('is-hidden');
-        });
-        showMoreTopStoriesButton.textContent = 'Afficher plus de top stories';
-      }
-      topStoriesIsHidden = !topStoriesIsHidden;
+        showMoreTopStoriesButton.style.display = 'none';
+      } 
     });
   }
 
   // Behavior cards functionality
+  // const behaviorArrows = document.querySelectorAll('.behavior-card .arrow');
+
+  // if (behaviorArrows.length > 0) {
+  //   behaviorArrows.forEach(arrow => {
+  //     arrow.addEventListener('click', function() {
+  //       const behaviorCard = arrow.closest('.behavior-card');
+  //       const behaviorCardUl = behaviorCard.querySelector('ul');
+  //       const behaviorCardImg = behaviorCard.querySelector('.behavior-img');
+
+  
+  //       if (behaviorCard.classList.contains('is-open')) {
+  //         behaviorCard.classList.remove('is-open');
+  //         behaviorCard.classList.add('is-closed');
+  //         setTimeout(() => {
+  //           behaviorCardUl.style.height = '0px'; 
+  //           behaviorCardImg.classList.remove('is-active'); 
+  //           behaviorCardImg.style.display = 'none'; 
+
+  //         }, 300);
+  //       } else {
+  //         behaviorCard.classList.remove('is-closed');
+  //         behaviorCard.classList.add('is-open');  
+  //         behaviorCardUl.style.height = behaviorCardUl.scrollHeight + 'px';
+  //         behaviorCardImg.style.display = 'block'; 
+  //         setTimeout(() => {
+  //           behaviorCardImg.classList.add('is-active'); 
+  //         }, 200);
+  //       }
+  //     });
+  //   });
+  // }
+
   const behaviorArrows = document.querySelectorAll('.behavior-card .arrow');
+
   if (behaviorArrows.length > 0) {
     behaviorArrows.forEach(arrow => {
       arrow.addEventListener('click', function() {
         const behaviorCard = arrow.closest('.behavior-card');
+        const behaviorCardUl = behaviorCard.querySelector('ul');
+        const behaviorCardImg = behaviorCard.querySelector('.behavior-img');
+
+  
         if (behaviorCard.classList.contains('is-open')) {
           behaviorCard.classList.remove('is-open');
           behaviorCard.classList.add('is-closed');
+          behaviorCardImg.classList.remove('is-active'); 
           setTimeout(() => {
-            behaviorCard.querySelector('ul').style.display = 'none';
+            behaviorCardUl.style.height = '0px'; 
+            behaviorCardImg.style.height = '0px'; 
+
           }, 300);
         } else {
           behaviorCard.classList.remove('is-closed');
-          behaviorCard.classList.add('is-open');
+          behaviorCard.classList.add('is-open');  
+          behaviorCardUl.style.height = behaviorCardUl.scrollHeight + 'px';
+          behaviorCardImg.style.height = '300px'; 
           setTimeout(() => {
-            behaviorCard.querySelector('ul').style.display = 'block';
-          }, 300);
+            behaviorCardImg.classList.add('is-active'); 
+          }, 200);
         }
       });
     });
   }
+  
+  
 
   // Burger menu functionality
   const burgerMenu = document.querySelector('.burger-menu');
@@ -131,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const pinnedNumbers = document.getElementById('articleNumbersContainer');
 
-  if (pinnedNumbers) {
+  if (pinnedNumbers && window.innerWidth > 1200) {
     // Créez l'animation avec ScrollTrigger
     gsap.to(pinnedNumbers, {
       y: 500, // Déplace l'élément de 200 pixels vers le bas
@@ -156,7 +194,7 @@ if (heroMockup && window.innerWidth > 1200) {
     scrollTrigger: {
       trigger: heroMockup, // Déclencheur de l'animation
       start: "top 10%", // Déclenche l'animation quand le haut de l'élément atteint 10% de la fenêtre
-      end: "bottom -120%", // Termine l'animation quand le bas de l'élément atteint -30% de la fenêtre
+      end: "bottom -110%", // Termine l'animation quand le bas de l'élément atteint -30% de la fenêtre
       scrub: true,
       pin: true, // Permet une animation fluide en fonction du défilement
       markers: true, // Ajoute des marqueurs pour déboguer (supprimez cette ligne en production)

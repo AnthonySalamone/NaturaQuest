@@ -65,8 +65,8 @@ h1,h2,h3,h4,h5,h6 {
 //p
 
 @media (min-width:1200px) {
-  p,li {
-    font-size: 20px;
+  p,li, li span {
+    font-size: 25px;
   }
   
 }
@@ -137,6 +137,12 @@ section, article .section-title {
       transition: 0.3s ease-in-out;
 
     }
+  }
+}
+
+@media (min-width:1200px) {
+  .show-more {
+    font-size: 25px;
   }
 }
 
