@@ -78,38 +78,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Behavior cards functionality
-  // const behaviorArrows = document.querySelectorAll('.behavior-card .arrow');
-
-  // if (behaviorArrows.length > 0) {
-  //   behaviorArrows.forEach(arrow => {
-  //     arrow.addEventListener('click', function() {
-  //       const behaviorCard = arrow.closest('.behavior-card');
-  //       const behaviorCardUl = behaviorCard.querySelector('ul');
-  //       const behaviorCardImg = behaviorCard.querySelector('.behavior-img');
-
-  
-  //       if (behaviorCard.classList.contains('is-open')) {
-  //         behaviorCard.classList.remove('is-open');
-  //         behaviorCard.classList.add('is-closed');
-  //         setTimeout(() => {
-  //           behaviorCardUl.style.height = '0px'; 
-  //           behaviorCardImg.classList.remove('is-active'); 
-  //           behaviorCardImg.style.display = 'none'; 
-
-  //         }, 300);
-  //       } else {
-  //         behaviorCard.classList.remove('is-closed');
-  //         behaviorCard.classList.add('is-open');  
-  //         behaviorCardUl.style.height = behaviorCardUl.scrollHeight + 'px';
-  //         behaviorCardImg.style.display = 'block'; 
-  //         setTimeout(() => {
-  //           behaviorCardImg.classList.add('is-active'); 
-  //         }, 200);
-  //       }
-  //     });
-  //   });
-  // }
-
   const behaviorArrows = document.querySelectorAll('.behavior-card .arrow');
 
   if (behaviorArrows.length > 0) {
@@ -202,6 +170,8 @@ if (heroMockup && window.innerWidth > 1200) {
   });
 }
 
+
+// hero element
 const heroContent = document.querySelector('.hero-content-container');
 
 if (heroContent) {
@@ -224,30 +194,23 @@ if (heroContent) {
   });
 }
 
-// // Récupérer le nom du fichier actuel dans l'URL
-// const currentUrl = window.location.pathname.split('/').pop();
+//mobile img
+document.addEventListener('DOMContentLoaded', function() {
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  if (isMobile) {
+    const missionsImages = document.querySelectorAll('.mission-card-img-container');
+    const topStoriesImages = document.querySelectorAll('.top-stories-card-img-container');
 
-// // Vérifier si le nom du fichier est différent de "index.html"
-// if (currentUrl !== "index.html") {
-//   const sections = document.querySelectorAll('section');
+    setTimeout(() => {
+      missionsImages.forEach(img => {
+        img.classList.remove('filtered');
+      });
+      topStoriesImages.forEach(img => {
+        img.classList.remove('filtered');
+      });
+    }, 1500);
+  }
+});
 
-//   if (sections) {
-//     sections.forEach(section => {
-//       gsap.fromTo(section, 
-//         { y: 150 }, 
-//         {
-//           y: 0,
-//           scrollTrigger: {
-//             trigger: section,
-//             start: "top bottom",
-//             end: "top center",
-//             scrub: true,
-//             markers: true 
-//           }
-//         }
-//       );
-//     });
-//   }
-// }
 
 

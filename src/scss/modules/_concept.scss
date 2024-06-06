@@ -8,18 +8,18 @@
 }
 
 
-@media (min-width:1200px) {
-  .concepts-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    .concept {
-      width: calc(50% - 15px);
-      margin-bottom: 50px;
-      h3 {
-        font-size: 40px;
-      }
-    }
-  }
-}
+// @media (min-width:1200px) {
+//   .concepts-container {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+//     .concept {
+//       width: calc(50% - 15px);
+//       margin-bottom: 50px;
+//       h3 {
+//         font-size: 40px;
+//       }
+//     }
+//   }
+// }

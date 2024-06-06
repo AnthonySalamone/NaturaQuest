@@ -105,6 +105,22 @@ section, article .section-title {
   
 }
 
+@media (min-width:1200px) {
+  section, article .section-title {
+   margin-top: 250px;
+   &:first-child {
+     margin-top: 75px;
+   }
+ }
+ .section-title {
+   font-size: 110px;
+   line-height: 1;
+ 
+   margin-bottom: 60px;
+ }
+ 
+}
+
 //show more button
 
 .show-more {
@@ -146,7 +162,7 @@ section, article .section-title {
   }
 }
 
-@media (hover:hover) {
+
   li .filtered {
     background: #074020;
     transition: 0.1s ease-in-out;
@@ -179,4 +195,12 @@ section, article .section-title {
    }
   
   }
-}
+
+  .mission-card-img-container {
+    img {
+      mix-blend-mode: none;
+      -webkit-filter:none;
+      filter: none;
+      transition: 0.5s ease-in-out;
+    }
+  }

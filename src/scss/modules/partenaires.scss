@@ -1,0 +1,40 @@
+.partenaires {
+  h3 {
+    color: var(--sapin);
+    font-family: 'pp migra';
+    font-size: 25px;
+  }
+
+  ul {
+    padding-bottom: 25px;
+    list-style-type: square;
+    list-style-position: inside;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+@media (min-width:1200px) {
+  .partenaires {
+    h3 {
+      font-size: 45px;
+    }
+  }
+  .partenaires-layout-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .partenaires-mandataires-layout-container {
+      width: 47%;
+    }
+  }
+}
