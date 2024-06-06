@@ -146,31 +146,37 @@ section, article .section-title {
   }
 }
 
-
-
-li .filtered {
-  background: #2FAC66;
-  transition: 0.1s ease-in-out;
-
-  &:hover {
-    background: #2fac6500;
+@media (hover:hover) {
+  li .filtered {
+    background: #074020;
     transition: 0.1s ease-in-out;
+  
+    &:hover {
+      background: #2fac6500;
+      transition: 0.1s ease-in-out;
+      img {
+        mix-blend-mode: none;
+        -webkit-filter:none;
+        filter: none;
+        transition: 0.1s ease-in-out;
+      }
+    }
   }
-}
-
-li .filtered img {
- mix-blend-mode: screen;
- -webkit-filter: grayscale(100%) contrast(200%);
- filter: grayscale(100%) contrast(200%);
- opacity: 1;
- transition: 0.1s ease-in-out;
-
- &:hover {
-  mix-blend-mode: none;
-  -webkit-filter:none;
-  filter: none;
-  transition: 0.1s ease-in-out;
-
- }
-
+  
+  li .filtered img {
+   mix-blend-mode: screen;
+   -webkit-filter: grayscale(100%) contrast(200%);
+   filter: grayscale(100%) contrast(200%);
+   opacity: 1;
+   transition: 0.1s ease-in-out;
+  
+   &:hover {
+    mix-blend-mode: none;
+    -webkit-filter:none;
+    filter: none;
+    transition: 0.1s ease-in-out;
+  
+   }
+  
+  }
 }
