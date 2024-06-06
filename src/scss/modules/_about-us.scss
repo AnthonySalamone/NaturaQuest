@@ -1,0 +1,46 @@
+section.about-us {
+  .contact-introduction {
+    font-family: 'PP Neue Montreal';
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+  figure {
+    margin-bottom: 25px;
+    figcaption {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  }
+  p {
+    margin-bottom: 25px;
+  }
+}
+
+
+
+@media (min-width:1200px) {
+section.about-us {
+  width: 60%;
+  .contact-introduction {
+    font-family: 'PP Neue Montreal';
+    font-weight: 500;
+
+  }
+    figure {
+    margin-bottom: 25px;
+    
+    img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    }
+
+    figcaption {
+      margin-top: 7px;
+      font-size: 18px;
+    }
+  }
+}
+p {
+  margin-bottom: 45px;
+}
+}

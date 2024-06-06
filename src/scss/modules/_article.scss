@@ -62,6 +62,12 @@
   margin-right: 20px;
   figure {
     margin-bottom: 45px;
+    
+    img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    }
+
     figcaption {
       margin-top: 7px;
       font-size: 18px;
@@ -70,5 +76,5 @@
   p {
     margin-bottom: 45px;
   }
-}
+  }
 }
