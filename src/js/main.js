@@ -39,25 +39,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Show more missions functionality
-  const showMoreMissionsButton = document.querySelector('.show-more-button.missions-button');
+  // Show more Missions functionality
+  const showMoreMissionsButton = document.querySelector('.show-more-button.Missions-button');
   if (showMoreMissionsButton) {
-    let missionsIsHidden = true;
+    let MissionsIsHidden = true;
 
     showMoreMissionsButton.addEventListener('click', function() {
-      const hiddenCards = document.querySelectorAll('.mission-card .hidden-missions');
-      if (missionsIsHidden) {
+      const hiddenCards = document.querySelectorAll('.mission-card .hidden-Missions');
+      if (MissionsIsHidden) {
         hiddenCards.forEach(card => {
           card.classList.remove('is-hidden');
         });
-        showMoreMissionsButton.textContent = 'Masquer toutes les missions';
-      } else {
-        hiddenCards.forEach(card => {
-          card.classList.add('is-hidden');
-        });
-        showMoreMissionsButton.textContent = 'Afficher plus de missions';
-      }
-      missionsIsHidden = !missionsIsHidden;
+        showMoreMissionsButton.style.display = 'none';
+      } 
     });
   }
 
@@ -198,11 +192,11 @@ if (heroContent) {
 document.addEventListener('DOMContentLoaded', function() {
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   if (isMobile) {
-    const missionsImages = document.querySelectorAll('.mission-card-img-container');
+    const MissionsImages = document.querySelectorAll('.mission-card-img-container');
     const topStoriesImages = document.querySelectorAll('.top-stories-card-img-container');
 
     setTimeout(() => {
-      missionsImages.forEach(img => {
+      MissionsImages.forEach(img => {
         img.classList.remove('filtered');
       });
       topStoriesImages.forEach(img => {

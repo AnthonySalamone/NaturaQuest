@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <title>NaturaQuest</title>
-    <meta name="description" content="Découvrez NaturaQuest, l'application mobile qui vous permet de vous promener, d'observer la nature et de contribuer à sa préservation de manière ludique et bénévole. Explorez les milieux naturels de la Suisse, participez à des missions d'observation et sensibilisez-vous à l'environnement. Rejoignez notre communauté engagée pour protéger la biodiversité et les paysages suisses."/>
-    <meta name="keywords" content="NaturaQuest, application mobile, écologie, bénévolat, observation de la nature, promenade écologique, préservation de l'environnement, suisse, biodiversité, flore, faune, promenades, missions bénévoles, sensibilisation environnementale">
+    <meta name="description" content="Découvrez NaturaQuest, l'application mobile qui vous permet de vous promener, d'observer la nature et de contribuer à sa préservation de manière ludique et bénévole. Explorez les milieux naturels de la Suisse, participez à des Missions d'observation et sensibilisez-vous à l'environnement. Rejoignez notre communauté engagée pour protéger la biodiversité et les paysages suisses."/>
+    <meta name="keywords" content="NaturaQuest, application mobile, écologie, bénévolat, observation de la nature, promenade écologique, préservation de l'environnement, suisse, biodiversité, flore, faune, promenades, Missions bénévoles, sensibilisation environnementale">
     <meta name="author" content="Anthony Salamone" />
     <meta name="robots" content="index, follow" /> <!-- Pour autoriser l'indexation et le suivi par les robots des moteurs de recherche -->
     <meta name="googlebot" content="index, follow" /> <!-- Pour autoriser l'indexation et le suivi par le robot de Google -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="NaturaQuest" />
-    <meta property="og:description" content="Découvrez NaturaQuest, l'application mobile qui vous permet de vous promener, d'observer la nature et de contribuer à sa préservation de manière ludique et bénévole. Explorez les milieux naturels de la Suisse, participez à des missions d'observation et sensibilisez-vous à l'environnement. Rejoignez notre communauté engagée pour protéger la biodiversité et les paysages suisses."/> <!-- Description pour le partage sur les réseaux sociaux -->
+    <meta property="og:description" content="Découvrez NaturaQuest, l'application mobile qui vous permet de vous promener, d'observer la nature et de contribuer à sa préservation de manière ludique et bénévole. Explorez les milieux naturels de la Suisse, participez à des Missions d'observation et sensibilisez-vous à l'environnement. Rejoignez notre communauté engagée pour protéger la biodiversité et les paysages suisses."/> <!-- Description pour le partage sur les réseaux sociaux -->
     <meta property="og:image" content="https://naturaquest.app/img/social-image.png" /> <!-- Image pour le partage sur les réseaux sociaux -->
     <meta property="og:url" content="https://naturaquest.app/" /> <!-- URL de votre site pour le partage sur les réseaux sociaux -->
     <meta property="og:type" content="website" /> <!-- Type de contenu pour le partage sur les réseaux sociaux -->
@@ -30,11 +30,11 @@
               <a href="index.html">
                 <li>Accueil</li>
               </a>
-              <a href="explorer.html">
-                <li class="current-page">Explorer</li>
+              <a href="Missions.html">
+                <li class="current-page">Missions</li>
               </a>
-              <a href="Bilan.html">
-                <li>Bilan</li>
+              <a href="Actualités.html">
+                <li>Actualités</li>
               </a>
               <a href="about.html">
                 <li>À propos</li>
@@ -77,11 +77,11 @@
               <a href="index.html">
                 <li>Accueil</li>
               </a>
-              <a href="explorer.html">
-                <li  class="current-page">Explorer</li>
+              <a href="Missions.html">
+                <li  class="current-page">Missions</li>
               </a>
-              <a href="Bilan.html">
-                <li>Bilan</li>
+              <a href="Actualités.html">
+                <li>Actualités</li>
               </a>
               <a href="about.html">
                 <li>À propos</li>
@@ -161,8 +161,51 @@
               <p class="mission-card-information">Suisse Romande • Nuit du 10.07 au 10.08 2024</p>
             </li>
           </a>
+          <a class="mission-card filter-randonnée filter-faune filter-insolite" href="">
+            <li>
+              <div class="mission-card-img-container filtered">
+                <div class="label-container">
+                  <div class="label">randonnée</div>
+                  <div class="label">faune</div>
+                  <div class="label">insolite</div>
+                </div>
+                <img src="img/Chenilles-processionnaires-du-pin.webp" alt="Photographie Chenilles processionnaires du pin">
+              </div>
+              <h3 class="mission-card-title">Signalement des Chenilles processionnaires du pin</h3>
+              <p class="mission-card-preview">Repérer les Chenilles processionnaires ou leurs nids dans des pinèdes, transmettre une photo géolocalisée.</p>
+              <p class="mission-card-information">Vallée du Valais, région lémanique • Printemps</p>
+            </li>
+          </a>
+          <a class="mission-card filter-balade filter-flore" href="">
+            <li>
+              <div class="mission-card-img-container filtered">
+                <div class="label-container">
+                  <div class="label">balade</div>
+                  <div class="label">flore</div>
+                </div>
+                <img src="img/renoue-du-japon.webp" alt="Photographie Renouée du Japon">
+              </div>
+              <h3 class="mission-card-title">Néophyte envahissante: Renouée du Japon</h3>
+              <p class="mission-card-preview">Signaler et participer à l’arrachage de cette néophyte envahissante très résistante.</p>
+              <p class="mission-card-information">Versoix, Genève • Toute l'année</p>
+            </li>
+          </a>
           <a class="mission-card filter-randonnée filter-faune" href="">
-            <li class="is-hidden hidden-missions">
+            <li>
+              <div class="mission-card-img-container filtered">
+                <div class="label-container">
+                  <div class="label">balade</div>
+                  <div class="label">faune</div>
+                </div>
+                <img src="img/herisson-commun.webp" alt="Photographie herisson commun">
+              </div>
+              <h3 class="mission-card-title">Recensement du hérisson commun</h3>
+              <p class="mission-card-preview">Identifier et dénombrer, lors de promenades nocturnes, les populations de hérissons communs</p>
+              <p class="mission-card-information">Suisse Romande • Nuit du 10.07 au 10.08 2024</p>
+            </li>
+          </a>
+          <a class="mission-card filter-randonnée filter-faune" href="">
+            <li class="is-hidden hidden-Missions">
               <div class="mission-card-img-container filtered">
                 <div class="label-container">
                   <div class="label">balade</div>
@@ -177,7 +220,7 @@
             </li>
           </a>
           <a class="mission-card filter-randonnée filter-faune" href="">
-            <li class="is-hidden hidden-missions">
+            <li class="is-hidden hidden-Missions">
               <div class="mission-card-img-container filtered">
                 <div class="label-container">
                   <div class="label">randonnée</div>
@@ -192,7 +235,7 @@
             </li>
           </a>
           <a class="mission-card filter-insolite" href="">
-            <li class="is-hidden hidden-missions">
+            <li class="is-hidden hidden-Missions">
               <div class="mission-card-img-container filtered">
                 <div class="label-container">
                   <div class="label">insolite</div>
@@ -206,7 +249,7 @@
             </li>
           </a>
           <a class="mission-card filter-balade filter-flore" href="">
-            <li class="is-hidden hidden-missions">
+            <li class="is-hidden hidden-Missions">
               <div class="mission-card-img-container filtered">
                 <div class="label-container">
                   <div class="label">balade</div>
@@ -220,7 +263,7 @@
             </li>
           </a>
           <a class="mission-card filter-randonnée filter-faune" href="">
-            <li  class="is-hidden hidden-missions">
+            <li  class="is-hidden hidden-Missions">
               <div class="mission-card-img-container filtered">
                 <div class="label-container">
                   <div class="label">balade</div>
@@ -234,7 +277,7 @@
             </li>
           </a>
           <a class="mission-card filter-randonnée filter-faune" href="">
-            <li class="is-hidden hidden-missions">
+            <li class="is-hidden hidden-Missions">
               <div class="mission-card-img-container filtered">
                 <div class="label-container">
                   <div class="label">balade</div>
@@ -250,7 +293,7 @@
           </a>
         </ul>
         <div class="show-more">
-          <div class="show-more-button missions-button">Afficher plus de missions</div>
+          <div class="show-more-button Missions-button">Afficher plus de Missions</div>
         </div>
       </section>
       <!--mission section end-->
@@ -283,7 +326,7 @@
               <li><span>Sécurité personnelle :</span> Avant de partir en nature, assurez-vous d'avoir le matériel adéquat (vêtements appropriés, chaussures de marche, eau, trousse de premiers secours, etc.).</li>
               <li><span>Restez sur les sentiers balisés :</span> évitez de vous aventurer en dehors des sentiers balisés, car cela peut être dangereux et endommager l’écosystème fragile.</li>
               <li><span>Prévoyez suffisamment de temps :</span> estimez correctement le temps nécessaire pour terminer votre randonnée afin de ne pas vous retrouver pris au dépourvu lorsque la nuit tombe.</li>
-              <li><span>Prévoyez suffisamment de temps :</span> Vérifiez toujours la météo et évitez les missions en cas de conditions dangereuses (tempêtes, fortes pluies, canicules).</li>
+              <li><span>Prévoyez suffisamment de temps :</span> Vérifiez toujours la météo et évitez les Missions en cas de conditions dangereuses (tempêtes, fortes pluies, canicules).</li>
               <li><span>Communication :</span> Informez toujours quelqu'un de votre itinéraire et de votre heure prévue de retour. Emportez un téléphone portable avec une batterie pleinement chargée.</li>
             </ul>
             <img class="behavior-img" src="img/collection.webp" alt="">
