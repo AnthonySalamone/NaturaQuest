@@ -7,7 +7,7 @@
 
 ## Installation
 
-Cloner le repository git
+Cloner le repository git ou télécharger le fichier zip du code
 
 ```
 git clone git@github.com:eikon-frontend/starterkit.git <nom du projet>
@@ -20,21 +20,26 @@ cd <nom-du-projet>
 npm install
 ```
 
-## Commandes
+## Commandes pour visualiser le projet
 
-Compiler la SCSS, aggréger le JS, lancer le serveur et écouter les changements
+Compiler la SCSS, aggréger le JS, lancer le serveur et écouter les changements.
+-> permet de générer un lien localhost afin de visualisé le site sur un navigateur web.
 
 ```
 npm run dev
 ```
+-> ouvrir le lien localhost pour visualiser le site sur un navigateur.
+
+Bonne visite :) 
+
+
+## Utilisation du projet
 
 Compiler pour la production
 
 ```
 npm run build
 ```
-
-## Utilisation
 
 ### HTML
 
