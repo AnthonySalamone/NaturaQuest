@@ -1,4 +1,4 @@
-main, .header-content, .burger-overlay-content {
+main, .header-content, .burger-overlay-content, .footer-content {
   max-width: 1600px;
   margin: 0 25px;
 }
@@ -10,7 +10,7 @@ section.wide {
 
 
 @media (min-width:1200px) {
-  main, .header-content, .burger-overlay-content {
+  main, .header-content, .burger-overlay-content, .footer-content {
     margin: 0 50px;
   }
   section.wide {
@@ -20,11 +20,14 @@ section.wide {
 }
 
 @media (min-width:1600px) {
-  main, .header-content, .burger-overlay-content {
+  main, .header-content, .burger-overlay-content, .footer-content {
     margin: 0 auto;
   }
   section.wide {
     margin: 0 -200px;
     padding: 70px 200px 110px 200px;
   }
+ footer {
+  margin: 0 auto;
+ }
 }

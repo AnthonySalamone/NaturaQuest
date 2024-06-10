@@ -35,6 +35,8 @@ body {
   line-height: 1.5;
 
   background: var(--beige);
+
+  overflow-x: hidden;
 }
 
 
@@ -113,7 +115,7 @@ section, article .section-title {
    }
  }
  .section-title {
-   font-size: 110px;
+   font-size: 90px;
    line-height: 1;
  
    margin-bottom: 60px;
@@ -163,7 +165,8 @@ section, article .section-title {
 }
 
 
-  li .filtered {
+  li .filtered,
+  li.filtered {
     background: #074020;
     transition: 0.1s ease-in-out;
   
@@ -179,7 +182,8 @@ section, article .section-title {
     }
   }
   
-  li .filtered img {
+  li .filtered img,
+  li.filtred img{
    mix-blend-mode: screen;
    -webkit-filter: grayscale(100%) contrast(200%);
    filter: grayscale(100%) contrast(200%);

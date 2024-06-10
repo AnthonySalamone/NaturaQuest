@@ -6,6 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 document.addEventListener('DOMContentLoaded', function() {
+
   // Filter functionality
   var filterItems = document.querySelectorAll('.list-menu li');
   var cards = document.querySelectorAll('.mission-card');
@@ -15,22 +16,17 @@ document.addEventListener('DOMContentLoaded', function() {
       filterItem.addEventListener('click', function(e) {
         e.preventDefault();
 
-        // Toggle the 'is-active' class on the clicked filter
         filterItem.classList.toggle('is-active');
 
-        // Get all active filters
         var activeFilters = Array.from(filterItems).filter(item => item.classList.contains('is-active'));
 
-        // If no filters are active, show all cards
         if (activeFilters.length === 0) {
           cards.forEach(card => card.style.display = 'block');
           return;
         }
 
-        // Create a set of filters
         var activeClasses = activeFilters.map(item => item.getAttribute('data-filter'));
 
-        // Filter cards based on active filters
         cards.forEach(function(card) {
           var matches = activeClasses.some(activeClass => card.classList.contains(activeClass));
           card.style.display = matches ? 'block' : 'none';
@@ -132,15 +128,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const pinnedNumbers = document.getElementById('articleNumbersContainer');
 
   if (pinnedNumbers && window.innerWidth > 1200) {
-    // Créez l'animation avec ScrollTrigger
     gsap.to(pinnedNumbers, {
-      y: 500, // Déplace l'élément de 200 pixels vers le bas
+      y: 500, 
       scrollTrigger: {
-        trigger: pinnedNumbers, // Déclencheur de l'animation
-        start: "top 50%", // Déclenche l'animation quand le haut de l'élément atteint 80% de la fenêtre
-        end: "bottom 20%", // Termine l'animation quand le bas de l'élément atteint 20% de la fenêtre
-        scrub: true, // Permet une animation fluide en fonction du défilement
-        markers: true, // Ajoute des marqueurs pour déboguer (supprimez cette ligne en production)
+        trigger: pinnedNumbers, 
+        start: "top 50%", 
+        end: "bottom 20%", 
+        scrub: true, 
       }
     });
   }
@@ -154,12 +148,11 @@ const heroMockup = document.getElementById('heroMockup');
 if (heroMockup && window.innerWidth > 1200) {
   const tl = gsap.timeline({
     scrollTrigger: {
-      trigger: heroMockup, // Déclencheur de l'animation
-      start: "top 10%", // Déclenche l'animation quand le haut de l'élément atteint 10% de la fenêtre
-      end: "bottom -110%", // Termine l'animation quand le bas de l'élément atteint -30% de la fenêtre
+      trigger: heroMockup, 
+      start: "top 10%", 
+      end: "bottom -110%", 
       scrub: true,
-      pin: true, // Permet une animation fluide en fonction du défilement
-      markers: true, // Ajoute des marqueurs pour déboguer (supprimez cette ligne en production)
+      pin: true, 
     }
   });
 }
@@ -181,7 +174,6 @@ if (heroContent) {
           start: "top bottom",
           end: "top center",
           scrub: true,
-          markers: true // Ajoute des marqueurs pour le débogage
         }
       }
     );

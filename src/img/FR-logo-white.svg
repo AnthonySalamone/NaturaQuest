@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 178 65">
+  <defs>
+    <style>
+      .cls-1 {
+        mask: url(#mask-15);
+      }
+
+      .cls-2 {
+        mask: url(#mask-17);
+      }
+
+      .cls-3 {
+        mask: url(#mask-18);
+      }
+
+      .cls-4 {
+        mask: url(#mask-14);
+      }
+
+      .cls-5 {
+        mask: url(#mask-13);
+      }
+
+      .cls-6 {
+        mask: url(#mask-19);
+      }
+
+      .cls-7 {
+        mask: url(#mask-12);
+      }
+
+      .cls-8 {
+        mask: url(#mask-11);
+      }
+
+      .cls-9 {
+        mask: url(#mask-16);
+      }
+
+      .cls-10 {
+        mask: url(#mask-10);
+      }
+
+      .cls-11 {
+        mask: url(#mask);
+      }
+
+      .cls-12 {
+        mask: url(#mask-2-3);
+      }
+
+      .cls-13 {
+        fill: #fff;
+        fill-rule: evenodd;
+        stroke-width: 0px;
+      }
+
+      .cls-14 {
+        mask: url(#mask-3);
+      }
+
+      .cls-15 {
+        mask: url(#mask-5);
+      }
+
+      .cls-16 {
+        mask: url(#mask-4);
+      }
+
+      .cls-17 {
+        mask: url(#mask-1);
+      }
+
+      .cls-18 {
+        mask: url(#mask-7);
+      }
+
+      .cls-19 {
+        mask: url(#mask-6);
+      }
+
+      .cls-20 {
+        mask: url(#mask-8);
+      }
+
+      .cls-21 {
+        mask: url(#mask-9);
+      }
+    </style>
+    <mask id="mask" x=".1" y=".8" width="177.3" height="63.9" maskUnits="userSpaceOnUse">
+      <g id="mask-2">
+        <polygon id="path-1" class="cls-13" points=".1 64.7 177.5 64.7 177.5 .8 .1 .8 .1 64.7"/>
+      </g>
+    </mask>
+    <mask id="mask-1" x=".1" y=".8" width="177.3" height="63.9" maskUnits="userSpaceOnUse">
+      <g id="mask-2-2" data-name="mask-2">
+        <polygon id="path-1-2" data-name="path-1" class="cls-13" points=".1 64.7 177.5 64.7 177.5 .8 .1 .8 .1 64.7"/>
+      </g>
+    </mask>
+    <mask id="mask-2-3" data-name="mask-2" x=".1" y=".8" width="177.3" height="63.9" maskUnits="userSpaceOnUse">
+      <g id="mask-2-4" data-name="mask-2">
+        <polygon id="path-1-3" data-name="path-1" class="cls-13" points=".1 64.7 177.5 64.7 177.5 .8 .1 .8 .1 64.7"/>
+      </g>
+    </mask>
+    <mask id="mask-3" x=".1" y=".8" width="177.3" height="63.9" maskUnits="userSpaceOnUse">
+      <g id="mask-2-5" data-name="mask-2">
+        <polygon id="path-1-4" data-name="path-1" class="cls-13" points=".1 64.7 177.5 64.7 177.5 .8 .1 .8 .1 64.7"/>
+      </g>
+    </mask>
+    <mask id="mask-4" x=".1" y=".8" width="177.3" height="63.9" maskUnits="userSpaceOnUse">
+      <g id="mask-2-6" data-name="mask-2">
+        <polygon id="path-1-5" data-name="path-1" class="cls-13" points=".1 64.7 177.5 64.7 177.5 .8 .1 .8 .1 64.7"/>
+      </g>
+    </mask>
+    <mask id="mask-5" x=".1" y=".8" width="177.3" height="63.9" maskUnits="userSpaceOnUse">
+      <g id="mask-2-7" data-name="mask-2">
+        <polygon id="path-1-6" data-name="path-1" class="cls-13" points=".1 64.7 177.5 64.7 177.5 .8 .1 .8 .1 64.7"/>
+      </g>
+    </mask>
+    <mask id="mask-6" x=".1" y=".8" width="177.3" height="63.9" maskUnits="userSpaceOnUse">
+      <g id="mask-2-8" data-name="mask-2">
+        <polygon id="path-1-7" data-name="path-1" class="cls-13" points=".1 64.7 177.5 64.7 177.5 .8 .1 .8 .1 64.7"/>
+      </g>
+    </mask>
+    <mask id="mask-7" x=".1" y=".8" width="177.3" height="63.9" maskUnits="userSpaceOnUse">
+      <g id="mask-2-9" data-name="mask-2">
+        <polygon id="path-1-8" data-name="path-1" class="cls-13" points=".1 64.7 177.5 64.7 177.5 .8 .1 .8 .1 64.7"/>
+      </g>
+    </mask>
+    <mask id="mask-8" x=".1" y=".8" width="177.3" height="63.9" maskUnits="userSpaceOnUse">
+      <g id="mask-2-10" data-name="mask-2">
+        <polygon id="path-1-9" data-name="path-1" class="cls-13" points=".1 64.7 177.5 64.7 177.5 .8 .1 .8 .1 64.7"/>
+      </g>
+    </mask>
+    <mask id="mask-9" x=".1" y=".8" width="177.3" height="63.9" maskUnits="userSpaceOnUse">
+      <g id="mask-2-11" data-name="mask-2">
+        <polygon id="path-1-10" data-name="path-1" class="cls-13" points=".1 64.7 177.5 64.7 177.5 .8 .1 .8 .1 64.7"/>
+      </g>
+    </mask>
+    <mask id="mask-10" x=".1" y=".8" width="177.3" height="63.9" maskUnits="userSpaceOnUse">
+      <g id="mask-2-12" data-name="mask-2">
+        <polygon id="path-1-11" data-name="path-1" class="cls-13" points=".1 64.7 177.5 64.7 177.5 .8 .1 .8 .1 64.7"/>
+      </g>
+    </mask>
+    <mask id="mask-11" x=".1" y=".8" width="177.3" height="63.9" maskUnits="userSpaceOnUse">
+      <g id="mask-2-13" data-name="mask-2">
+        <polygon id="path-1-12" data-name="path-1" class="cls-13" points=".1 64.7 177.5 64.7 177.5 .8 .1 .8 .1 64.7"/>
+      </g>
+    </mask>
+    <mask id="mask-12" x=".1" y=".8" width="177.3" height="63.9" maskUnits="userSpaceOnUse">
+      <g id="mask-2-14" data-name="mask-2">
+        <polygon id="path-1-13" data-name="path-1" class="cls-13" points=".1 64.7 177.5 64.7 177.5 .8 .1 .8 .1 64.7"/>
+      </g>
+    </mask>
+    <mask id="mask-13" x=".1" y=".8" width="177.3" height="63.9" maskUnits="userSpaceOnUse">
+      <g id="mask-2-15" data-name="mask-2">
+        <polygon id="path-1-14" data-name="path-1" class="cls-13" points=".1 64.7 177.5 64.7 177.5 .8 .1 .8 .1 64.7"/>
+      </g>
+    </mask>
+    <mask id="mask-14" x=".1" y=".8" width="177.3" height="63.9" maskUnits="userSpaceOnUse">
+      <g id="mask-2-16" data-name="mask-2">
+        <polygon id="path-1-15" data-name="path-1" class="cls-13" points=".1 64.7 177.5 64.7 177.5 .8 .1 .8 .1 64.7"/>
+      </g>
+    </mask>
+    <mask id="mask-15" x=".1" y=".8" width="177.3" height="63.9" maskUnits="userSpaceOnUse">
+      <g id="mask-2-17" data-name="mask-2">
+        <polygon id="path-1-16" data-name="path-1" class="cls-13" points=".1 64.7 177.5 64.7 177.5 .8 .1 .8 .1 64.7"/>
+      </g>
+    </mask>
+    <mask id="mask-16" x=".1" y=".8" width="177.3" height="63.9" maskUnits="userSpaceOnUse">
+      <g id="mask-2-18" data-name="mask-2">
+        <polygon id="path-1-17" data-name="path-1" class="cls-13" points=".1 64.7 177.5 64.7 177.5 .8 .1 .8 .1 64.7"/>
+      </g>
+    </mask>
+    <mask id="mask-17" x=".1" y=".8" width="177.3" height="63.9" maskUnits="userSpaceOnUse">
+      <g id="mask-2-19" data-name="mask-2">
+        <polygon id="path-1-18" data-name="path-1" class="cls-13" points=".1 64.7 177.5 64.7 177.5 .8 .1 .8 .1 64.7"/>
+      </g>
+    </mask>
+    <mask id="mask-18" x=".1" y=".8" width="177.3" height="63.9" maskUnits="userSpaceOnUse">
+      <g id="mask-2-20" data-name="mask-2">
+        <polygon id="path-1-19" data-name="path-1" class="cls-13" points=".1 64.7 177.5 64.7 177.5 .8 .1 .8 .1 64.7"/>
+      </g>
+    </mask>
+    <mask id="mask-19" x=".1" y=".8" width="177.3" height="63.9" maskUnits="userSpaceOnUse">
+      <g id="mask-2-21" data-name="mask-2">
+        <polygon id="path-1-20" data-name="path-1" class="cls-13" points=".1 64.7 177.5 64.7 177.5 .8 .1 .8 .1 64.7"/>
+      </g>
+    </mask>
+  </defs>
+  <polygon id="Fill-1" class="cls-13" points="48.6 1.3 48.6 11.1 55.4 11.1 55.4 10 49.9 10 49.9 6.6 55 6.6 55 5.5 49.9 5.5 49.9 2.4 55.3 2.4 55.3 1.3 48.6 1.3"/>
+  <polygon id="Fill-2" class="cls-13" points="56.2 1.3 56.2 2.4 59.5 2.4 59.5 11.1 60.8 11.1 60.8 2.4 64 2.4 64 1.3 56.2 1.3"/>
+  <path id="Fill-3" class="cls-13" d="M66.8,1.3l-3.8,9.8h1.3l1.1-3h4.2l1.1,3h1.4l-3.8-9.8h-1.4ZM67.5,2.5h0l1.6,4.6h-3.3l1.7-4.6Z"/>
+  <polygon id="Fill-4" class="cls-13" points="71 1.3 71 2.4 74.3 2.4 74.3 11.1 75.6 11.1 75.6 2.4 78.9 2.4 78.9 1.3 71 1.3"/>
+  <path id="Fill-5" class="cls-13" d="M85.6,10h2.2c.9,0,3.3-.2,3.3-3.9s-.9-3.8-3.3-3.8h-2.2v7.6ZM84.3,1.3h3.4c3,0,4.7,1.5,4.7,4.7s-1.4,5.2-4.7,5.2h-3.4V1.3Z"/>
+  <polygon id="Fill-7" class="cls-13" points="94.2 1.3 101 1.3 101 2.4 95.6 2.4 95.6 5.5 100.7 5.5 100.7 6.6 95.6 6.6 95.6 10 101.1 10 101.1 11.1 94.2 11.1 94.2 1.3"/>
+  <polygon id="Fill-9" class="cls-13" points="107 1.3 113.5 1.3 113.5 2.4 108.3 2.4 108.3 5.5 112.8 5.5 112.8 6.6 108.3 6.6 108.3 11.1 107 11.1 107 1.3"/>
+  <path id="Fill-11" class="cls-13" d="M119.2,5.8c1.2,0,2.3-.3,2.3-1.7s-.5-1.7-1.7-1.7h-3.2v3.4h2.7ZM115.2,1.3h4.6c1.8,0,3,1,3,2.6s-.5,2.2-1.7,2.5h0c1.1.2,1.4,1.1,1.5,2.1,0,1,0,2,.6,2.7h-1.5c-.4-.4-.2-1.5-.4-2.4-.1-1-.4-1.8-1.6-1.8h-3.2v4.2h-1.3V1.3Z"/>
+  <g class="cls-11">
+    <polygon id="Fill-13" class="cls-13" points="124.9 11.1 126.2 11.1 126.2 1.3 124.9 1.3 124.9 11.1"/>
+  </g>
+  <g class="cls-17">
+    <path id="Fill-15" class="cls-13" d="M130,10h3.3c1.1,0,1.8-.7,1.8-1.8s-1-1.6-2.1-1.6h-3v3.4ZM130,5.5h2.6c1.5,0,2.1-.5,2.1-1.6s-1-1.6-2.1-1.6h-2.6v3.1ZM128.7,1.3h3.6c.9,0,2,0,2.6.4.6.4,1.2,1.1,1.2,2.1s-.5,1.8-1.5,2.2h0c1.2.3,1.9,1.2,1.9,2.4s-1,2.8-3,2.8h-4.7V1.3Z"/>
+  </g>
+  <g class="cls-12">
+    <path id="Fill-16" class="cls-13" d="M142.5,10.3c2.4,0,3.4-2.1,3.4-4s-1-4-3.4-4-3.4,2.1-3.4,4,1,4,3.4,4M142.5,1.1c3.1,0,4.7,2.5,4.7,5.2s-1.6,5.2-4.7,5.2-4.7-2.5-4.7-5.2,1.6-5.2,4.7-5.2"/>
+  </g>
+  <g class="cls-14">
+    <path id="Fill-17" class="cls-13" d="M156.9,7.6c0,2.5-1.4,3.8-3.9,3.8s-4-1.2-4-3.8V1.3h1.3v6.3c0,1.7,1,2.7,2.7,2.7s2.6-.9,2.6-2.7V1.3h1.3v6.3Z"/>
+  </g>
+  <g class="cls-16">
+    <path id="Fill-18" class="cls-13" d="M163.3,5.8c1.2,0,2.3-.3,2.3-1.7s-.5-1.7-1.7-1.7h-3.2v3.4h2.7ZM159.3,1.3h4.6c1.8,0,3,1,3,2.6s-.5,2.2-1.7,2.5h0c1.1.2,1.4,1.1,1.5,2.1,0,1,0,2,.6,2.7h-1.5c-.4-.4-.2-1.5-.4-2.4-.1-1-.4-1.8-1.6-1.8h-3.2v4.2h-1.3V1.3Z"/>
+  </g>
+  <g class="cls-15">
+    <path id="Fill-19" class="cls-13" d="M176.3,9.9c-.8,1-2,1.5-3.2,1.5-2.9,0-4.7-2.4-4.7-5s1.6-5.3,4.7-5.3,3.8,1,4.2,3.3h-1.3c-.3-1.5-1.5-2.2-2.9-2.2-2.4,0-3.4,2.1-3.4,4.2s1.2,3.9,3.4,3.9,3.2-1.4,3.2-3.2h-3.1v-1.1h4.3v5.2h-.8l-.3-1.2Z"/>
+  </g>
+  <g class="cls-19">
+    <path id="Fill-20" class="cls-13" d="M54.2,23.9c-.2-1.4-1.1-2-2.4-2s-2.2.4-2.2,1.7,1.6,1.4,3.1,1.7c1.6.4,3.1.9,3.1,2.8s-2.1,2.9-3.8,2.9-4.1-1.1-4.1-3.5h1.2c0,1.7,1.4,2.4,2.9,2.4s2.5-.4,2.5-1.8-1.6-1.6-3.1-1.9c-1.6-.3-3.1-.8-3.1-2.6s1.8-2.9,3.6-2.9,3.5.9,3.6,3.1h-1.2Z"/>
+  </g>
+  <g class="cls-18">
+    <polygon id="Fill-21" class="cls-13" points="59.4 22.1 56.1 22.1 56.1 21 64 21 64 22.1 60.7 22.1 60.7 30.8 59.4 30.8 59.4 22.1"/>
+  </g>
+  <g class="cls-20">
+    <path id="Fill-22" class="cls-13" d="M65.8,26.8h3.3l-1.6-4.6h0l-1.7,4.6ZM66.8,21h1.4l3.8,9.8h-1.4l-1.1-3h-4.2l-1.1,3h-1.3l3.8-9.8Z"/>
+  </g>
+  <g class="cls-21">
+    <path id="Fill-23" class="cls-13" d="M75,26.8h3.3l-1.6-4.6h0l-1.7,4.6ZM75.9,21h1.4l3.8,9.8h-1.4l-1.1-3h-4.2l-1.1,3h-1.3l3.8-9.8Z"/>
+  </g>
+  <g class="cls-10">
+    <polygon id="Fill-24" class="cls-13" points="83.4 22.1 80.1 22.1 80.1 21 88 21 88 22.1 84.7 22.1 84.7 30.8 83.4 30.8 83.4 22.1"/>
+  </g>
+  <g class="cls-8">
+    <polygon id="Fill-25" class="cls-13" points="93.4 21 99.9 21 99.9 22.1 94.7 22.1 94.7 25.2 99.3 25.2 99.3 26.3 94.7 26.3 94.7 30.8 93.4 30.8 93.4 21"/>
+  </g>
+  <g class="cls-7">
+    <path id="Fill-26" class="cls-13" d="M105.6,25.5c1.2,0,2.3-.3,2.3-1.7s-.5-1.7-1.7-1.7h-3.2v3.4h2.7ZM101.6,21h4.6c1.8,0,3,1,3,2.6s-.5,2.2-1.7,2.5h0c1.1.2,1.4,1.1,1.5,2.1,0,1,0,2,.6,2.7h-1.5c-.4-.4-.2-1.5-.4-2.4-.1-1-.4-1.8-1.6-1.8h-3.2v4.2h-1.3v-9.8Z"/>
+  </g>
+  <g class="cls-5">
+    <polygon id="Fill-27" class="cls-13" points="111.3 21 118.1 21 118.1 22.1 112.6 22.1 112.6 25.2 117.7 25.2 117.7 26.3 112.6 26.3 112.6 29.7 118.1 29.7 118.1 30.8 111.3 30.8 111.3 21"/>
+  </g>
+  <g class="cls-4">
+    <polygon id="Fill-28" class="cls-13" points="120 30.8 121.3 30.8 121.3 21 120 21 120 30.8"/>
+  </g>
+  <g class="cls-1">
+    <path id="Fill-29" class="cls-13" d="M125.1,29.7h3.3c1.1,0,1.8-.7,1.8-1.8s-1-1.6-2.1-1.6h-3v3.4ZM125.1,25.2h2.6c1.5,0,2.1-.5,2.1-1.6s-1-1.6-2.1-1.6h-2.6v3.1ZM123.8,21h3.6c.9,0,2,0,2.6.4.6.4,1.2,1.1,1.2,2.1s-.5,1.8-1.5,2.2h0c1.2.3,1.9,1.2,1.9,2.4s-1,2.8-3,2.8h-4.7v-9.8Z"/>
+  </g>
+  <g class="cls-9">
+    <path id="Fill-30" class="cls-13" d="M141.3,27.3c0,2.5-1.4,3.8-3.9,3.8s-4-1.2-4-3.8v-6.3h1.3v6.3c0,1.7,1,2.7,2.7,2.7s2.6-.9,2.6-2.7v-6.3h1.3v6.3Z"/>
+  </g>
+  <g class="cls-2">
+    <path id="Fill-31" class="cls-13" d="M147.7,25.5c1.2,0,2.3-.3,2.3-1.7s-.5-1.7-1.7-1.7h-3.2v3.4h2.7ZM143.7,21h4.6c1.8,0,3,1,3,2.6s-.5,2.2-1.7,2.5h0c1.1.2,1.4,1.1,1.5,2.1,0,1,0,2,.6,2.7h-1.5c-.4-.4-.2-1.5-.4-2.4-.1-1-.4-1.8-1.6-1.8h-3.2v4.2h-1.3v-9.8Z"/>
+  </g>
+  <g class="cls-3">
+    <path id="Fill-32" class="cls-13" d="M160.7,29.6c-.8,1-2,1.5-3.2,1.5-2.9,0-4.7-2.4-4.7-5s1.6-5.3,4.7-5.3,3.8,1,4.2,3.3h-1.3c-.3-1.5-1.5-2.2-2.9-2.2-2.4,0-3.4,2.1-3.4,4.2s1.2,3.9,3.4,3.9,3.2-1.4,3.2-3.2h-3.1v-1.1h4.3v5.2h-.8l-.3-1.2Z"/>
+  </g>
+  <g class="cls-6">
+    <path id="Fill-33" class="cls-13" d="M.1,62.1v2.6c7.8-2,16-6.7,20.5-10.9,3.1-2.9,5.6-6.2,7.7-10.1,0,0,.1-.2.2-.3,1.9-3.6,3.3-7.7,4.3-12.6,2.8-13.5-1.4-27.1-2.3-28.8-.8-1.4-2.4-1.3-3.4-1.3-.2,0-.5,0-.7,0H.1v30.9h20.2c.1,0,.5,0,.6,0,.7.1,1.2.6,1.3,1.2,0,.2,0,.4,0,.6-.2,6-3.3,18.2-20.6,26l-1.6.7v1.8Z"/>
+  </g>
+</svg>

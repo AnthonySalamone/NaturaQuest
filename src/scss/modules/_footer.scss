@@ -1,0 +1,121 @@
+footer {
+  background: var(--sapin);
+}
+.footer-content {
+  display: flex;
+  flex-direction: column-reverse;
+
+  margin-top: 100px;
+  padding: 30px 25px;
+  color: var(--beige);
+  font-size: 30px;
+  .site-logo {
+    margin-bottom:40px ;
+  }
+  .dev-logo {
+    margin-bottom: 40px;
+  }
+  .logo-container {
+    margin-bottom: 50px;
+    .site-logo {
+      font-family: "pp migra";
+      font-weight: bold;
+    }
+    img {
+      width: 100px;
+    }
+  }
+  .mandataires, .contributeurs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    img {
+      width: 120px;
+      margin-bottom: 30px;
+      margin-right: 40px;
+      &.vertical-logo {
+        height: 50px;
+        width: inherit;
+        margin-right: 130px;
+      }
+    }
+  }
+  .store {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    a {
+      display: block;
+      height: 100%;
+      width: 49%;
+    }
+  }
+  nav {
+    font-size: 25px;
+margin-bottom: 50px;  }
+}
+.newsletter {
+  margin: 50px 0;
+}
+.newsletter p {
+  font-family: 'pp migra';
+  font-size: 30px;
+  line-height: 1.2;
+  color: var(--beige);
+}
+
+#newsletter-input {
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  color: var(--sapin);
+}
+
+#newsletter-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: var(--beige);
+  color: var(--sapin);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+
+}
+
+#newsletter-button:hover {
+  background-color: var(--green);
+  transition: 0.2s ease-in-out;
+}
+#newsletter-button:active {
+  background-color: var(--sapin);
+  transition: 0.2s ease-in-out;
+}
+
+
+@media (min-width:1200px) {
+
+  .footer-content {
+    margin-top: 150px;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    .logo-container {
+      margin-top: 50px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  #newsletter-input {
+    margin-right: 20px;
+  }
+}
+
