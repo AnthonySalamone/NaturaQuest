@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Behavior cards functionality
-  const behaviorArrows = document.querySelectorAll('.behavior-card .arrow');
+  const behaviorArrows = document.querySelectorAll('.behavior-card');
 
   if (behaviorArrows.length > 0) {
     behaviorArrows.forEach(arrow => {
